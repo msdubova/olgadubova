@@ -1,0 +1,90 @@
+.catalog {
+  ul {
+    @include reset-ul();
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+
+  }
+
+  li {
+    border:  red 2px solid;
+    padding: 1.25em 2em;
+
+
+
+    position: relative;
+
+    height: 200px;
+    // perspective: 800px;
+
+    &:before,
+    &:after,
+    span:before,
+    span:after {
+      content: "";
+      position: absolute;
+      border-radius: 2px;
+    }
+
+
+    span {
+      color: black;
+      z-index: 1000;
+      border: 2px dotted forestgreen;
+
+    }
+
+    &:after {
+      width: 40%;
+      height: 20%;
+      border: 2px solid $color-secondary-shadow;
+      background-color: $color-secondary;
+      top: 0;
+      border-radius: 0.75em;
+      left: 0;
+    }
+
+    span:before {
+      width: 90%;
+      height: 83%;
+      background-color: #fff;
+      bottom: 0;
+      left: 5%;
+      z-index: 2;
+    }
+
+    span:after {
+      width: 100%;
+      height: 92%;
+      background-color: $color-secondary;
+      border: 2px solid $color-secondary-shadow;
+      background-color: $color-secondary;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      transition: transform 500ms ease 0ms;
+      transform-origin: 0 100% 0;
+      transform-style: preserve-3d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+
+
+    &:hover span:after {
+      transform: rotateX(-65deg);
+    }
+
+    &:hover span:before {
+      transform: scaleY(1.4);
+
+      top: 0;
+      transition: transform 500ms ease 0ms;
+    }
+
+  }
+}

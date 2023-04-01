@@ -1,0 +1,9 @@
+.section {
+  min-height: 100vh;
+
+}
+
+.section__container {
+  display: grid;
+  place-items: center;
+}

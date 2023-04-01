@@ -1,0 +1,48 @@
+.page {
+  box-sizing: border-box;
+  min-width: $vp-mobile;
+  height: 100vh;
+  overflow-x: hidden;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", "Arial", sans-serif;
+  color: $color-default-black;
+  letter-spacing: 0;
+
+  scroll-behavior: smooth;
+
+  svg {
+    display: block;
+  }
+}
+
+.page__body {
+  background-color: $color-default-white;
+
+}
+
+.page__main {
+  width: 100%;
+background-image: url("../../img/svg/background-intro.svg");
+background-repeat: no-repeat;
+background-size: cover;
+
+  h1 {
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+
+
+section {
+  height: 100vh;
+}

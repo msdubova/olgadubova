@@ -1,0 +1,24 @@
+.nav {
+
+
+  flex-grow: 0;
+  ul {
+    @include reset-ul();
+display: flex;
+
+
+
+  }
+
+  li {
+    display: block;
+    margin-left:7px;
+  }
+
+  a {
+    display: block;
+
+    padding: 10px;
+
+  }
+}

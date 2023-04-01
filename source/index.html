@@ -1,35 +1,180 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>ProjectName</title>
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Olga Dubova</title>
+  <link rel="preload" href="fonts/poppins-v20-latin-100.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-100.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-700.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+
+  <!-- <header class="header">
+    <div class=" header__container container">
+      <a class="header__logo">
+        <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="white">
+          <circle cx="50" cy="50" r="50" />
+        </svg>
+        Olga Dubova
+      </a>
+
+
+    </div> -->
+  </header>
+  <main class="page__main">
+
+
+    <section class="section article article--intro">
+      <div class="container section__container">
+
+        <h1 class="typing">
+          Hello!<br>
+          I am Olga Dubova
+        </h1>
+        <h2 class="visually-hidden"></h2>
+        <p>
+          A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the
+          success of the overall product
+        </p>
+        <nav class="nav">
+          <ul>
+            <li>
+              <button class='btn'href="index.html">
+                home
+              </a>
+            </li>
+            <li>
+              <button  class='btn'href="#about">
+                about
+              </a>
+            </li>
+            <li>
+              <button class='btn' href="#projects">
+                projects
+              </a>
+            </li>
+            <li>
+              <button  class='btn'href="contact">
+                contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+       <section class="section article article--projects"  id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="catalog">
+          <ul>
+<li><span>SuperGym</span>
+</li>
+<li><span>SMART</span>
+</li>
+<li><span>ANtarctica</span>
+</li>
+<li><span>Coffee</span>
+</li>
+<li><span>Device</span>
+</li>
+<li><span>Toys</span>
+</li>
+    <span></span>
+        </ul>
+        </div>
+        <div>
+
+        </div>
+      </div>
+
+
+    </section>
+    <section class="section article article--about" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div>
+          <div>
+            <h3>Get to know me!</h3>
+            <p>Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+              mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+              tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
+
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+              auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
+              rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet
+              lacinia. Aliquam in elementum tellus.</p>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
+          <div>
+            <h3>My Skills</h3>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section class="section article article--contact"  id="contact">
+      <div class="container">
+        <h2>contact</h2>
+        <form action="">
+
+        </form>
+      </div>
+
+    </section>
+    <div class="machine">
+      <div class="smoak-1" id="smoak-1"></div>
+      <div class="smoak-2" id="smoak-2"></div>
+      <div class="toast" id="toast">
+        <div class="line"></div>
+        <a href="https://facebook.com/abdtt" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://github.com/aaltatan" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>
+        </a>
+        <a href="https://instagram.com/abdullahalttan/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i>
+        </a>
+      </div>
+      <div class="machine-body">
+        <div class="inside-square"></div>
+        <div class="h-line"></div>
+        <button class="red-btn" id="red-btn"></button>
+        <button class="green-btn" id="green-btn"></button>
+      </div>
+      <div class="handler" id="handler"></div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <a class="footer__logo">
+        <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="white">
+          <circle cx="50" cy="50" r="50" />
+        </svg>
+        Olga Dubova
+      </a>
+<div>
+<p>
+  All rights reserved
+</p>
+</div>
     </div>
 
-    <!-- Модалки -->
+  </footer>
+  <!-- </div> -->
+
+  <!-- Модалки
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -42,23 +187,24 @@
           </button>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

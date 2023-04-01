@@ -1,0 +1,40 @@
+.article {
+  padding-top: 80px;
+  text-align: center;
+
+  // background-color: $color-secondary-highlight;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+
+  &--intro {
+position: sticky;
+top:-45vh;
+
+    // background-color: $color-secondary-highlight;
+  //  background-image:  url("../../img/svg/background-intro.svg");
+   background-size: cover;
+
+ }
+    p {
+      max-width: 760px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 25px;
+      letter-spacing: 1px;
+      color: #085A8C;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+
+    &--about {
+      // background-color:#C5EAFA;
+    }
+
+    &--projects {}
+
+    &--contact {
+
+    }
+
+}

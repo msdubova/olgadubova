@@ -13,6 +13,17 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
 
+
+$color-primary: #90133a;
+$color-primary-dark: #491928;
+
+
+
+$color-secondary: #f9c4d2;
+$color-secondary-highlight: #fff0f0;
+$color-secondary-border:  #382b22;
+$color-secondary-shadow: #b18597;
+$color-secondary-hover: #ffe9e9;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
@@ -51,6 +62,9 @@ $vp-1280:                           1280px;
 $vp-1440:                           1440px;
 $vp-1920:                           1920px;
 
+$vp-desktop:                        1200px;
+$vp-tablet:                         770px;
+$vp-mobile:                         320px;
 // Retina
 // ---------------------------------
 
