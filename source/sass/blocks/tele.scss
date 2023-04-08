@@ -1,8 +1,9 @@
 .tv {
-  width: 100%;
-  height: 100%;
-margin-left: auto;
-  height: 100%;
+
+margin: auto;
+  width: 80%;
+height: 70%;
+
   position: relative;
 
 
@@ -24,15 +25,21 @@ margin-left: auto;
 
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 50% 50%;
+  grid-template-rows:20% auto 20%;
 }
 
 .tele {
+
+  box-shadow: 9px 7px 0px 0 rgba(0, 0, 0, 0.22);
+  // box-shadow: 10px 10px 0px #00e6e6,
+  // 20px 20px 0px #01cccc;
+  // 30px 30px 0px #00bdbd;
+
   padding: 30px;
 
   width: 100%;
-  height: 100%;
 
+  height: 100%;
   border-radius: 25px;
   background: #89937C;
   z-index: 3;
@@ -45,11 +52,16 @@ margin-left: auto;
 .tele::before,
 .tele::after {
   content: '';
+
   border-style: solid;
   border-color: #474e5e transparent transparent transparent;
   border-width: 20px 5px 0 5px;
   width: 40px;
-  bottom: -20px;
+  top: 100%;
+
+  // box-shadow: 10px 10px 0px #00e6e6,
+  // 20px 20px 0px #01cccc,
+  // 30px 30px 0px #00bdbd;
 }
 
 .tele::before {
@@ -61,12 +73,13 @@ margin-left: auto;
 }
 
 .screen {
-
+  height: 100%;
   background: #039aaf;
   box-sizing: border-box;
 
   border-radius: 15px;
   border: 13px solid #474e5e;
+
 }
 
 
@@ -85,8 +98,23 @@ margin-left: auto;
     min-height: 7px;
 
     background: #3b4760;
-    margin: 7px 0;
+    margin: 5px 0;
     border-radius: 3px;
+    z-index: 2;
+
+    position: relative;
+
+    &::after {
+      border-radius: 3px;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 70%;
+      background-color: #616878;
+      left: 0;
+      top: 40%;
+      z-index: 0;
+    }
   }
 }
 
@@ -95,6 +123,7 @@ margin-left: auto;
 .tumblr {
   @include reset-ul();
   display: grid;
+  grid-template-columns: 50% 50%;
 
   li {
     left: 0;
@@ -123,12 +152,12 @@ margin-left: auto;
     }
 
 
-  &:hover {
-    &::before{
-transform: rotate(20deg);
+    &:hover {
+      &::before {
+        transform: rotate(20deg);
 
+      }
     }
-  }
   }
 
 }

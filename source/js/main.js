@@ -46,20 +46,48 @@ window.addEventListener('DOMContentLoaded', () => {
 // используйте .closest(el)
 
 
-let greenBtn = document.getElementById("green-btn");
-let redBtn = document.getElementById("red-btn");
-let myToast = document.getElementById("toast");
-let myHandler = document.getElementById("handler");
-greenBtn.addEventListener("click", () => {
-	myHandler.classList.add("anmi-handler");
-	myToast.classList.add("anmi-toast");
-	document.getElementById("smoak-1").classList.add("anmi-smoak");
-	document.getElementById("smoak-2").classList.add("anmi-smoak");
-});
-redBtn.addEventListener("click", () => {
-	myHandler.classList.remove("anmi-handler");
-	myToast.classList.remove("anmi-toast");
-	document.getElementById("smoak-1").classList.remove("anmi-smoak");
-	document.getElementById("smoak-2").classList.remove("anmi-smoak");
-});
+// let greenBtn = document.getElementById("green-btn");
+// let redBtn = document.getElementById("red-btn");
+// let myToast = document.getElementById("toast");
+// let myHandler = document.getElementById("handler");
+// greenBtn.addEventListener("click", () => {
+// 	myHandler.classList.add("anmi-handler");
+// 	myToast.classList.add("anmi-toast");
+// 	document.getElementById("smoak-1").classList.add("anmi-smoak");
+// 	document.getElementById("smoak-2").classList.add("anmi-smoak");
+// });
+// redBtn.addEventListener("click", () => {
+// 	myHandler.classList.remove("anmi-handler");
+// 	myToast.classList.remove("anmi-toast");
+// 	document.getElementById("smoak-1").classList.remove("anmi-smoak");
+// 	document.getElementById("smoak-2").classList.remove("anmi-smoak");
+// });
 
+let checkTab = function(){
+
+
+  let heading = document.querySelector('.swiper-slide-active').innerHTML;
+
+let line = document.querySelector('.tab__line');
+line.innerHTML= heading;
+
+
+}
+
+let setTab = function() {
+  // let current = document.querySelector('.swiper-slide-active').innerHTML;
+
+  // let line = document.querySelector('.tab__line');
+  // line.innerHTML = current;
+  let tabButtons = document.querySelectorAll('.tumblr__button');
+
+
+
+  tabButtons.forEach(function(each) {
+    each.addEventListener('click', function(){
+      checkTab();
+    })
+  })
+}
+
+setTab();

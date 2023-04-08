@@ -1,0 +1,11 @@
+.tabs {
+  margin-left: auto;
+  margin-top: 100px;
+  ul {
+    @include reset-ul();
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    justify-content: center;
+  }
+}
