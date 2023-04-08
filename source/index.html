@@ -14,6 +14,9 @@
   <link rel="preload" href="fonts/poppins-v20-latin-regular.woff" as="font" type="font/woff" crossorigin>
   <link rel="preload" href="fonts/poppins-v20-latin-700.woff" as="font" type="font/woff" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body class="page__body">
@@ -48,53 +51,113 @@
         <nav class="nav">
           <ul>
             <li>
-              <button class='btn'href="index.html">
+              <button class='btn' href="index.html">
                 home
-              </a>
+                </a>
             </li>
             <li>
-              <button  class='btn'href="#about">
+              <button class='btn' href="#about">
                 about
-              </a>
+                </a>
             </li>
             <li>
               <button class='btn' href="#projects">
                 projects
-              </a>
+                </a>
             </li>
             <li>
-              <button  class='btn'href="contact">
+              <button class='btn' href="contact">
                 contact
-              </a>
+                </a>
             </li>
           </ul>
         </nav>
       </div>
     </section>
-       <section class="section article article--projects"  id="projects">
-      <div class="container">
+    <section class="section article article--projects projects" id="projects">
+      <div class="container projects__container">
         <h2>Projects</h2>
-        <div class="catalog">
-          <ul>
-<li><span>SuperGym</span>
-</li>
-<li><span>SMART</span>
-</li>
-<li><span>ANtarctica</span>
-</li>
-<li><span>Coffee</span>
-</li>
-<li><span>Device</span>
-</li>
-<li><span>Toys</span>
-</li>
-    <span></span>
-        </ul>
-        </div>
-        <div>
+        <!-- <div class="monitor">
+          <div class="monitor__block swiper slider">
+            <div class="swiper-wrapper  ">
 
+              <div class="slider__item projects__item projects__item--smart swiper-slide">Smart</div>
+              <div class="slider__item projects__item projects__item--antarctica swiper-slide">ANtarctica</div>
+              <div class="slider__item projects__item projects__item--coffee swiper-slide">Coffee</div>
+              <div class="slider__item projects__item projects__item--device swiper-slide">Device</div>
+              <div class="slider__item projects__item projects__item--toys swiper-slide">Toys</div>
+              <div class="slider__item projects__item projects__item--supergym swiper-slide">SuperGym</div>
+
+            </div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+          </div>
+        </div> -->
+        <!-- <div class="catalog">
+          <ul>
+            <li><h3>SuperGym</h3></li>
+
+
+            </li>
+            <li><h3>SMART</h3></li>
+            </li>
+            <li><h3>ANtarctica</h3></li>
+            </li>
+            <li><h3>Coffee</h3></li>
+            </li>
+            <li><h3>Device</h3></li>
+            </li>
+            <li><h3>Toys</h3></li>
+            </li>
+
+          </ul>
+        </div> -->
+
+        <div class="tv">
+          <div class="tele">
+
+            <div class="screen ">
+              <div class="swiper slider">
+                <div class="swiper-wrapper  ">
+
+                  <div class="slider__item projects__item projects__item--smart swiper-slide">Smart</div>
+                  <div class="slider__item projects__item projects__item--antarctica swiper-slide">ANtarctica</div>
+                  <div class="slider__item projects__item projects__item--coffee swiper-slide">Coffee</div>
+                  <div class="slider__item projects__item projects__item--device swiper-slide">Device</div>
+                  <div class="slider__item projects__item projects__item--toys swiper-slide">Toys</div>
+                  <div class="slider__item projects__item projects__item--supergym swiper-slide">SuperGym</div>
+
+                </div>
+
+                <div class=""></div>
+                <div class=""></div>
+              </div>
+
+            </div>
+
+            <div class="controls">
+              <ul class="sound">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <ul class="tumblr">
+                <li class="one swiper-button-prev"></li>
+                <li class="two swiper-button-next"></li>
+              </ul>
+            </div>
+
+          </div>
         </div>
+
       </div>
+
+
 
 
     </section>
@@ -126,7 +189,7 @@
     </section>
 
 
-    <section class="section article article--contact"  id="contact">
+    <section class="section article article--contact" id="contact">
       <div class="container">
         <h2>contact</h2>
         <form action="">
@@ -144,7 +207,8 @@
         </a>
         <a href="https://github.com/aaltatan" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i>
         </a>
-        <a href="https://instagram.com/abdullahalttan/" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i>
+        <a href="https://instagram.com/abdullahalttan/" target="_blank" rel="noopener noreferrer"><i
+            class="bi bi-instagram"></i>
         </a>
       </div>
       <div class="machine-body">
@@ -164,11 +228,11 @@
         </svg>
         Olga Dubova
       </a>
-<div>
-<p>
-  All rights reserved
-</p>
-</div>
+      <div>
+        <p>
+          All rights reserved
+        </p>
+      </div>
     </div>
 
   </footer>
@@ -205,6 +269,36 @@
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+  <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: false,
+      allowSlidePrev: true,
+      allowSlideNext: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      //  cssMode: true,
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    });
+  </script>
 </body>
 
 </html>

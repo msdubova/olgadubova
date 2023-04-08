@@ -7,8 +7,8 @@
   // background-size: cover;
 
   &--intro {
-position: sticky;
-top:-45vh;
+// position: sticky;
+// top:-45vh;
 
     // background-color: $color-secondary-highlight;
   //  background-image:  url("../../img/svg/background-intro.svg");
@@ -31,7 +31,9 @@ top:-45vh;
       // background-color:#C5EAFA;
     }
 
-    &--projects {}
+    &--projects {
+
+    }
 
     &--contact {
 

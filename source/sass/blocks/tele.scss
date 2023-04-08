@@ -1,0 +1,156 @@
+.tv {
+  width: 100%;
+  height: 100%;
+margin-left: auto;
+  height: 100%;
+  position: relative;
+
+
+}
+
+*::before,
+*::after {
+  position: absolute;
+}
+
+.controls {
+  position: relative;
+
+  *::before,
+  *::after {
+    position: absolute;
+  }
+
+
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50% 50%;
+}
+
+.tele {
+  padding: 30px;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 25px;
+  background: #89937C;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 80% auto;
+  grid-column-gap: 30px;
+
+}
+
+.tele::before,
+.tele::after {
+  content: '';
+  border-style: solid;
+  border-color: #474e5e transparent transparent transparent;
+  border-width: 20px 5px 0 5px;
+  width: 40px;
+  bottom: -20px;
+}
+
+.tele::before {
+  left: 45px;
+}
+
+.tele::after {
+  right: 45px;
+}
+
+.screen {
+
+  background: #039aaf;
+  box-sizing: border-box;
+
+  border-radius: 15px;
+  border: 13px solid #474e5e;
+}
+
+
+.sound {
+  @include reset-ul();
+  height: 100%;
+  width: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+
+  li {
+    min-height: 7px;
+
+    background: #3b4760;
+    margin: 7px 0;
+    border-radius: 3px;
+  }
+}
+
+
+
+.tumblr {
+  @include reset-ul();
+  display: grid;
+
+  li {
+    left: 0;
+    top: 0;
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    right: 10px;
+    background: #474e5e;
+    position: relative;
+
+    &::before {
+      content: '';
+      height: 10%;
+      width: 100%;
+      background: #616878;
+      left: 0;
+      border-radius: 15px;
+      top: 45%;
+      position: absolute;
+    }
+
+    &::after {
+      @include visually-hidden();
+    }
+
+
+  &:hover {
+    &::before{
+transform: rotate(20deg);
+
+    }
+  }
+  }
+
+}
+
+
+
+
+
+
+.tumblr .one {
+
+  & ::before {
+    transform: rotate(-35deg);
+  }
+
+
+}
+
+.tumblr .two {
+
+  &::before {
+    transform: rotate(35deg);
+  }
+
+}

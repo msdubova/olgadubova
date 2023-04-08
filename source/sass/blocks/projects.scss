@@ -1,0 +1,45 @@
+.projects{
+height: 80vh;
+
+h2{
+  text-align: left;
+  text-transform: uppercase;
+}
+
+}
+
+.projects__container {
+  padding: 0;
+  height: 100%;
+}
+
+.projects__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+opacity: 0.2;
+  &--smart {
+    background-image:url("../../img/smart.png");
+  }
+
+  &--antarctica{
+    background-image:url("../../img/antarctica.png");
+  }
+
+  &--coffee{
+    background-image:url("../../img/coffee.png");
+  }
+
+  &--device{
+
+  }
+
+  &--toys{
+
+  }
+
+  &--supergym{
+background-image:url("../../img/supergym.png");
+  }
+}
+
+
