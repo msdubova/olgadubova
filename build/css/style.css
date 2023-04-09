@@ -640,10 +640,13 @@ button,
 }
 
 .section {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.section--title {
+  height: 100vh;
 }
 
 .section__container {
@@ -903,6 +906,7 @@ button,
   background-image: url("../../img/svg/background-intro.svg");
   background-repeat: no-repeat;
   background-size: 6000%;
+  background-attachment: fixed;
 }
 
 .page__main h1 {
@@ -1121,6 +1125,7 @@ button,
 }
 
 .projects__wrapper .projects__block {
+  z-index: 6;
   position: relative;
   min-height: 400px;
   border-radius: 10px;
@@ -1128,6 +1133,10 @@ button,
   background-color: white;
   background-color: black;
   position: relative;
+}
+
+.projects__wrapper .projects__block:nth-child(2n) .projects__stack {
+  right: 20px;
 }
 
 .projects__wrapper .projects__block .projects__item {
@@ -1151,6 +1160,27 @@ button,
 
 .projects__wrapper .projects__block:hover h3 {
   background-color: #e5e5e5;
+}
+
+.projects__wrapper .projects__block:hover .projects__stack {
+  -webkit-transform: translateX(-60px);
+  -ms-transform: translateX(-60px);
+  transform: translateX(-60px);
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  z-index: -1;
+  opacity: 1;
+}
+
+.projects__wrapper .projects__block:hover:nth-child(2n) .projects__stack {
+  -webkit-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  transform: translateX(60px);
+}
+
+.projects__wrapper .projects__block:hover:nth-child(2n) .projects__stack svg {
+  fill: black;
 }
 
 .projects__wrapper .projects__block:hover img {
@@ -1242,10 +1272,10 @@ button,
   list-style: none;
   position: absolute;
   top: 20px;
-  left: -60px;
   display: -ms-grid;
   display: grid;
   height: 80%;
+  opacity: 0;
   grid-gap: auto;
 }
 
@@ -1453,21 +1483,19 @@ button,
 .ico {
   margin: 0 auto;
   text-align: center;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  -webkit-filter: url("#goo");
-  filter: url("#goo");
 }
 
 .st-arrow {
-  fill: black;
-  -webkit-animation: scrolly 2s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
-  animation: scrolly 2s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
+  fill: #f9c4d2;
+  -webkit-animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
+  animation: scrolly 3s cubic-bezier(0.77, 0, 0.175, 1) forwards infinite;
   -webkit-perspective: 9000px;
   perspective: 9000px;
   -webkit-transform: translateZ(0);

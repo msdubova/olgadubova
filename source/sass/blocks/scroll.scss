@@ -1,9 +1,9 @@
 
-$arrow-bg:black;
+
 
 $bezier: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 $bezier-bounce: cubic-bezier(.87,-.41,.19,1.44);
-$anim-timing: 2s;
+$anim-timing: 3s;
 
 
 .scroll {
@@ -11,24 +11,25 @@ $anim-timing: 2s;
   position: absolute;
   z-index: 100;
   top: 50%;
+
 }
 
 .ico {
   margin: 0 auto;
   text-align: center;
-width: 100px;
-height: 100px;
+width: 60px;
+height: 60px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  filter: url("#goo");
+  // filter: url("#goo");
 
 
   }
 
 
-  .st-arrow{
-    fill:$arrow-bg;
+  .st-arrow{  fill: $color-secondary;
+
     animation: scrolly $anim-timing $bezier forwards infinite;
     perspective: 9000px;
     transform: translateZ(0);

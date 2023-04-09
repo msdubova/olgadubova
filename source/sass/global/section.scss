@@ -1,8 +1,10 @@
 .section {
 
-height: 100vh;
-display: flex;
 
+display: flex;
+&--title {
+ height: 100vh;
+}
 
 }
 

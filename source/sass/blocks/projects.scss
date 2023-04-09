@@ -22,6 +22,13 @@
   @include reset-ul();
 
   .projects__block {
+
+    &:nth-child(2n) {
+      .projects__stack{
+        right: 20px;
+      }
+    }
+    z-index: 6;
     position: relative;
     min-height: 400px;
 
@@ -51,9 +58,30 @@
         background-color: #e5e5e5;
       }
 
-img {
-  filter: none;
-}
+      .projects__stack {
+        transform: translateX(-60px);
+
+        transition-duration: 1s;
+        z-index: -1;
+
+        opacity: 1;
+      }
+
+      &:nth-child(2n) {
+        .projects__stack {
+          transform: translateX(60px);
+         & svg {
+             fill: black;
+
+          }
+
+        }
+
+      }
+
+      img {
+        filter: none;
+      }
 
       // &::after{
       //   content: "";
@@ -173,9 +201,10 @@ img {
   // flex-direction: column;
   // flex-wrap: wrap;
   top: 20px;
-  left: -60px;
+  // left: -60px;
   display: grid;
   height: 80%;
+  opacity: 0;
   grid-gap: auto;
 
   li {
