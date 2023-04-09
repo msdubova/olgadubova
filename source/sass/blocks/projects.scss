@@ -34,9 +34,9 @@
 
 
     border-radius: 10px;
-    color: grey;
-    background-color: white;
-    background-color: black;
+    color: $color-faded-shadow;
+    background-color: $color-default-white;
+    background-color: $color-primary-black;
 
     position: relative;
 
@@ -55,7 +55,7 @@
       }
 
       h3 {
-        background-color: #e5e5e5;
+        background-color: $color-faded-highligt;
       }
 
       .projects__stack {
@@ -71,7 +71,7 @@
         .projects__stack {
           transform: translateX(60px);
          & svg {
-             fill: black;
+             fill: $color-primary-black;
 
           }
 
@@ -103,12 +103,12 @@
       width: 100%;
       height: 100%;
       position: relative;
-      border: 0.125rem solid black;
+      border: 0.125rem solid $color-primary-black;
       top: -15px;
       left: -15px;
       border-radius: 10px;
       display: block;
-      background-color: #dcdcdc;
+      background-color: $color-faded;
 
       background-size: cover;
       overflow: hidden;
@@ -122,16 +122,16 @@
       align-items: center;
       width: 100%;
       height: 10%;
-      border-bottom: 0.125rem solid black;
+      border-bottom: 0.125rem solid $color-primary-black;
       position: relative;
-      color: black;
+      color: $color-primary-black;
 
       &::before,
       &::after {
         content: "";
         width: 20px;
         height: 20px;
-        border: 0.125rem solid black;
+        border: 0.125rem solid $color-primary-black;
         border-radius: 50%;
 
 
@@ -142,12 +142,12 @@
 
       &::after {
         right: 15px;
-        background-color: red;
+        background-color: lightskyblue;
       }
 
       &::before {
         right: 40px;
-        background-color: greenyellow;
+        background-color: rgb(194, 224, 0);
       }
     }
 

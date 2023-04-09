@@ -46,7 +46,7 @@
   svg {
     fill: $color-secondary-highlight;
 
-    stroke: black
+    stroke:$color-primary-black;
   }
   span{
     display: none;
@@ -60,7 +60,7 @@
     svg {
       transform: scale(1.5);
       transition: 0.5s ease;
-      fill: yellow;
+      fill: $color-hover-purple;
     }
 
 

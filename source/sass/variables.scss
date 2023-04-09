@@ -16,7 +16,7 @@ $color-torch-red:                   #ff1553;
 
 $color-primary: #90133a;
 $color-primary-dark: #491928;
-
+$color-primary-black:#32272a;
 
 
 $color-secondary: #f9c4d2;
@@ -24,6 +24,16 @@ $color-secondary-highlight: #fff0f0;
 $color-secondary-border:  #382b22;
 $color-secondary-shadow: #b18597;
 $color-secondary-hover: #ffe9e9;
+
+$color-faded:#dcdcdc;
+$color-faded-highligt: #e5e5e5;
+$color-faded-shadow: #808080;
+
+
+$color-hover-purple: #d0c4f9;
+$color-hover-blue: #c4e7f9;
+$color-hover-green: #d2f9c4;
+$color-hover-yellow: #f9f6c4;
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
