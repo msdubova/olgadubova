@@ -987,7 +987,11 @@ button,
 }
 
 .article--intro {
+  background-image: url("../../img/lilalu-quietscheente-gelb-yellow-rubber-duck-HL.png");
   background-size: cover;
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .article p {
@@ -1099,7 +1103,6 @@ button,
 }
 
 .projects__container {
-  padding: 0;
   height: 100%;
 }
 
@@ -1117,7 +1120,7 @@ button,
   list-style: none;
 }
 
-.projects__wrapper li {
+.projects__wrapper .projects__block {
   position: relative;
   min-height: 400px;
   border-radius: 10px;
@@ -1127,7 +1130,7 @@ button,
   position: relative;
 }
 
-.projects__wrapper li .projects__item {
+.projects__wrapper .projects__block .projects__item {
   -webkit-transform: translateY(10px);
   -ms-transform: translateY(10px);
   transform: translateY(10px);
@@ -1136,17 +1139,26 @@ button,
   transition-duration: 0.5s;
 }
 
-.projects__wrapper li:hover .projects__scroll {
+.projects__wrapper .projects__block:hover .projects__scroll {
   display: block;
 }
 
-.projects__wrapper li:hover .projects__item {
+.projects__wrapper .projects__block:hover .projects__item {
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
 }
 
-.projects__wrapper li .projects__item {
+.projects__wrapper .projects__block:hover h3 {
+  background-color: #e5e5e5;
+}
+
+.projects__wrapper .projects__block:hover img {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.projects__wrapper .projects__block .projects__item {
   width: 100%;
   height: 100%;
   position: relative;
@@ -1155,12 +1167,12 @@ button,
   left: -15px;
   border-radius: 10px;
   display: block;
-  background-color: white;
+  background-color: #dcdcdc;
   background-size: cover;
   overflow: hidden;
 }
 
-.projects__wrapper li h3 {
+.projects__wrapper .projects__block h3 {
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1178,8 +1190,8 @@ button,
   color: black;
 }
 
-.projects__wrapper li h3::before,
-.projects__wrapper li h3::after {
+.projects__wrapper .projects__block h3::before,
+.projects__wrapper .projects__block h3::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -1187,34 +1199,74 @@ button,
   border-radius: 50%;
 }
 
-.projects__wrapper li h3::before:hover,
-.projects__wrapper li h3::after:hover {
+.projects__wrapper .projects__block h3::before:hover,
+.projects__wrapper .projects__block h3::after:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
-.projects__wrapper li h3::after {
+.projects__wrapper .projects__block h3::after {
   right: 15px;
   background-color: red;
 }
 
-.projects__wrapper li h3::before {
+.projects__wrapper .projects__block h3::before {
   right: 40px;
   background-color: greenyellow;
 }
 
-.projects__wrapper li picture {
+.projects__wrapper .projects__block picture {
   width: 100%;
   height: 450px;
   display: block;
   overflow-y: scroll;
   scrollbar-width: none;
   border-radius: 0 0 25px 25px;
+  position: relative;
 }
 
-.projects__wrapper li picture::-webkit-scrollbar {
+.projects__wrapper .projects__block picture::-webkit-scrollbar {
   width: 0;
+}
+
+.projects__wrapper .projects__block picture img {
+  -webkit-filter: saturate(0);
+  filter: saturate(0);
+}
+
+.projects__stack {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  top: 20px;
+  left: -60px;
+  display: -ms-grid;
+  display: grid;
+  height: 80%;
+  grid-gap: auto;
+}
+
+.projects__stack li {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.projects__stack svg {
+  fill: #f9c4d2;
+}
+
+.projects__stack svg:hover {
+  fill: #b18597;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .tv {

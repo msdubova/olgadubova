@@ -66,7 +66,7 @@
       <div class="container projects__container">
         <h2>Projects</h2>
         <ul class="projects__wrapper">
-          <li>
+          <li class="projects__block">
             <div class="projects__scroll scroll">
               <div class="ico animated">
 
@@ -102,8 +102,64 @@
                 <img src="./img/msdubova.github.io_Mishka-built-_.png" alt="">
               </picture>
             </div>
+
+            <ul class="projects__stack">
+
+              <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#queries">
+                </svg>
+              </li> -->
+              <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#html5">
+                </svg>
+              </li>
+              <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#css3">
+                </svg>
+              </li>
+
+              <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#sass">
+                </svg>
+              </li>           <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#npm">
+                </svg>
+              </li>
+              <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#gulp">
+                </svg>
+              </li>          <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#github">
+                </svg>
+              </li>
+              <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#node-js">
+                </svg>
+              </li>
+              <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#js">
+                </svg>
+              </li>
+              <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#a11y">
+                </svg>
+              </li> -->
+
+
+
+            </ul>
           </li>
-          <li>
+          <li class="projects__block">
             <div class="projects__scroll scroll">
               <div class="ico animated">
 
@@ -141,7 +197,7 @@
               </picture>
             </div>
           </li>
-          <li>
+          <li class="projects__block">
             <div class="projects__scroll scroll">
               <div class="ico animated">
 
@@ -179,7 +235,7 @@
               </picture>
             </div>
           </li>
-          <li>
+          <li class="projects__block">
             <div class="projects__scroll scroll">
               <div class="ico animated">
 
@@ -217,7 +273,7 @@
               </picture>
             </div>
           </li>
-          <li>
+          <li class="projects__block">
             <div class="projects__scroll scroll">
               <div class="ico animated">
 
@@ -255,49 +311,52 @@
               </picture>
             </div>
           </li>
-          <li>
-            <div  class="projects__scroll scroll">
+          <l class="projects__block" i>
+            <div class="projects__scroll scroll">
               <div class="ico animated">
 
-    <div class="circle circle-top"></div>
-    <div class="circle circle-main"></div>
-    <div class="circle circle-bottom"></div>
+                <div class="circle circle-top"></div>
+                <div class="circle circle-main"></div>
+                <div class="circle circle-bottom"></div>
 
-    <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve" >
-    <defs>
-      <clipPath id="cut-off-arrow">
-        <circle cx="306" cy="306" r="287"/>
-      </clipPath>
+                <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
+                  style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                  <defs>
+                    <clipPath id="cut-off-arrow">
+                      <circle cx="306" cy="306" r="287" />
+                    </clipPath>
 
-      <filter id="goo">
-        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
-        <feBlend in="SourceGraphic" in2="goo" />
-      </filter>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                        result="goo" />
+                      <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
 
-    </defs>
-      <path  class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                  </defs>
+                  <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
             l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
             c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
-            c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z"/>
-  </svg>
-  </div>
-  </div>
+            c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
+                </svg>
+              </div>
+            </div>
             <div class="projects__item">
               <h3>Smart</h3>
               <picture>
                 <img src="./img/smart.png" alt="">
               </picture>
             </div>
-          </li>
+            </li>
 
 
-          <!--
+            <!--
           <div class="projects__description"> -->
-          <!-- <div class="note-container">
+            <!-- <div class="note-container">
               <div class="sticky-note sticky-note-one" contenteditable="true">SMARTDEVICE</div>
             </div> -->
-          <!-- <div class="tabs">
+            <!-- <div class="tabs">
               <ul>
                 <li>
                   <button class="btn">
@@ -331,7 +390,7 @@
                 </li>
               </ul>
             </div> -->
-          <!-- <h3>
+            <!-- <h3>
 
             </h3>
             <ul>
@@ -340,7 +399,7 @@
             <a>code</a>
             <a>preview</a>
           </div> -->
-          <!-- <div class="tv">
+            <!-- <div class="tv">
             <div class="tele">
 
               <div class="screen ">
@@ -386,11 +445,11 @@
             </div>
           </div> -->
 
-          <!-- <a class="button"></a> -->
+            <!-- <a class="button"></a> -->
 
 
 
-          <!-- <div class="monitor">
+            <!-- <div class="monitor">
           <div class="monitor__block swiper slider">
             <div class="swiper-wrapper  ">
 
@@ -408,7 +467,7 @@
 
           </div>
         </div> -->
-          <!-- <div class="catalog">
+            <!-- <div class="catalog">
           <ul>
             <li><h3>SuperGym</h3></li>
 
