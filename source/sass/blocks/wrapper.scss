@@ -1,0 +1,68 @@
+// .wrapper{
+// 	position: fixed;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
+// }
+
+// .social_icons,
+// .social_icons *{
+// 	display: flex;
+// }
+
+// .social_icons{
+// 	list-style: none;
+// 	flex: 1;
+// }
+
+// .social_icons li{
+// 	width: 80px;
+// 	height: 80px;
+// 	margin: 40px;
+// }
+
+// .social_icons a{
+// 	text-decoration: none;
+// 	background: #fff;
+// 	flex: 1;
+// 	height: 100%;
+// 	justify-content: center;
+// 	align-items: center;
+// 	position: relative;
+// 	transform: perspective(1000px) rotate(-30deg) skew(30deg) translate(0,0);
+// 	box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+// 	transition: all .35s;
+// }
+
+// .social_icons a:before,
+// .social_icons a:after{
+// 	position: absolute;
+// 	content: "";
+// 	background: #ccc;
+// }
+
+// .social_icons a:before{
+// 	width: 20px;
+// 	height: 100%;
+// 	left: -20px;
+// 	top: 10px;
+// 	transform: skewY(-45deg);
+// }
+
+// .social_icons a:after{
+// 	width: 100%;
+// 	height: 20px;
+// 	left: -11px;
+// 	bottom: -20px;
+// 	transform: skewX(-45deg);
+// }
+
+// .social_icons a:hover{
+// 	transform: perspective(1000px) rotate(-30deg) skew(30deg) translate(25px,-25px);
+// 	box-shadow: -30px 30px 10px rgba(0,0,0,.3);
+// }
+
+// .social_icons i{
+// 	font-size: 2em;
+// 	color: #222;
+// }
