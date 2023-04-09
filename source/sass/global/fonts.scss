@@ -18,6 +18,14 @@
   font-display: swap;
   src: url("../fonts/rouble.woff2") format("woff2"), url("../fonts/rouble.woff") format("woff");
 }
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Press";
+
+  font-display: swap;
+  src: url("../fonts/PressStart2P-Regular.ttf");
+}
 
 @font-face {
   font-style: normal;

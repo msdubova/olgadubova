@@ -34,13 +34,16 @@ background-size:6000%;
 background-attachment: fixed;
 
   h1 {
-
+font-family: "Press";
     font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 77px;
+    font-weight:400;
+    font-size: 70px;
+    line-height:100px;
     text-align: center;
-    text-transform: uppercase;
+letter-spacing: 2;
+    color:#4b3b3f;
+    text-shadow: 13px 8px 0px $color-secondary-highlight;
+
   }
 }
 
