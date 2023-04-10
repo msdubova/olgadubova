@@ -1,0 +1,33 @@
+.menu__block {
+  display: none;
+}
+
+@include vp-mobile {
+  .menu__block {
+    @include reset-ul();
+    &--active {
+      padding: auto 30px;
+      display: grid;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      background-color: $color-hover-yellow;
+      z-index: 100;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+.menu__item {
+  border:1px red solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+svg {
+  border:1px red solid;
+}
+
+}

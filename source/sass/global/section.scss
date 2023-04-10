@@ -43,3 +43,10 @@ background-position: right 200%;
     padding-top: 50px;
   }
 }
+
+
+@include vp-mobile {
+  .section--title {
+    padding-top: 100px;
+  }
+}

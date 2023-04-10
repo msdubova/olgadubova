@@ -1,5 +1,4 @@
 .nav {
-
   align-self: flex-start;
   margin-left: 15%;
   flex-grow: 0;
@@ -7,9 +6,6 @@
   ul {
     @include reset-ul();
     display: flex;
-
-
-
   }
 
   li {
@@ -19,20 +15,23 @@
 
   a {
     display: block;
-
     padding: 15px;
+  }
+}
 
+@include vp-tablet {
+  .nav {
+    margin-left: 14%;
+
+    span {
+      display: none;
+    }
   }
 }
 
 
-@include vp-tablet {
+@include vp-mobile {
   .nav {
-
-    margin-left: 14%;
-
-span {display: none;}
+    display: none;
   }
-
-
 }

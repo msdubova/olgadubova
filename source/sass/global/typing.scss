@@ -1,6 +1,6 @@
 .typing {
   width: 22ch;
-  width:100%;
+  width: 100%;
   animation: typing 2s steps(22), blink .5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -11,12 +11,20 @@
 
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
 
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
+  }
+}
+
+
+@include vp-mobile {
+  .typing {
+    animation: none;
+    border: none;
   }
 }

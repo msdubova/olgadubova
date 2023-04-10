@@ -65,3 +65,9 @@
     }
   }
 }
+
+@include vp-mobile {
+  .footer {
+    display: none;
+  }
+}
