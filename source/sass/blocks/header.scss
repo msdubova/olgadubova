@@ -1,15 +1,5 @@
 .header {
-  // position: fixed;
-
-  position: absolute;
-
-  //   background-color: $color-primary;
-  //   color: $color-default-white;
-
-
-  // background-repeat: no-repeat;
-  // background-size: cover;
-
+  position: fixed;
 }
 
 
@@ -19,26 +9,22 @@
   padding-bottom: 13px;
 }
 
-.header__logo {
-  margin-right: auto;
-  display: flex;
 
-  align-items: center;
-  color: $color-default-white;
-  text-transform: uppercase;
-
-  svg {
-    margin-right: 5px;
-  }
-}
 
 .header__nav {
-  width:300px;
+
+  @include vp-tablet {
+    ul {
+      width: 300px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+    }
+  }
   ul {
     @include reset-ul();
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
+    grid-template-rows: 1fr 1fr 1fr;
+height: 300px;
     grid-area: auto;
 
   }
@@ -46,21 +32,23 @@
   svg {
     fill: $color-secondary-highlight;
 
-    stroke:$color-secondary-shadow;
+    stroke: $color-secondary-shadow;
   }
-  span{
+
+  span {
     display: none;
   }
 
   a:hover {
-    span{
+    span {
       display: block;
       margin-top: 20px;
     }
+
     svg {
       transform: scale(1.5);
       transition: 0.5s ease;
-      fill: $color-hover-purple;
+
     }
 
 
