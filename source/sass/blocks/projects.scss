@@ -10,37 +10,29 @@
 }
 
 .projects__wrapper {
-
-
+  @include reset-ul();
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
   grid-template-rows: auto;
-
   width: 100%;
-
-  @include reset-ul();
   margin-bottom: 50px;
 }
 
 .projects__block {
+  z-index: 6;
+  position: relative;
+  border-radius: 10px;
+  color: $color-faded-shadow;
+  background-color: $color-default-white;
+  background-color: $color-primary-black;
+  position: relative;
 
   &:nth-child(2n) {
     .projects__stack {
       right: 20px;
     }
   }
-
-  z-index: 6;
-  position: relative;
-
-  border-radius: 10px;
-  color: $color-faded-shadow;
-  background-color: $color-default-white;
-  background-color: $color-primary-black;
-
-  position: relative;
-
 
   &:hover {
     .projects__scroll {
@@ -57,11 +49,13 @@
 
     .projects__stack {
       transform: translateX(-60px);
-
       transition-duration: 1s;
       z-index: -1;
-
       opacity: 1;
+    }
+
+    img {
+      filter: none;
     }
 
     &:nth-child(2n) {
@@ -70,15 +64,8 @@
 
         & svg {
           fill: $color-primary-black;
-
         }
-
       }
-
-    }
-
-    img {
-      filter: none;
     }
   }
 
@@ -107,7 +94,6 @@
 
 .projects__item {
   width: 100%;
-  // height: 100%;
   position: relative;
   border: 1px solid $color-primary-black;
   top: -15px;
@@ -122,25 +108,18 @@
 }
 
 .projects__stack {
-
-  background-color: transparent;
   @include reset-ul();
+  background-color: transparent;
   position: absolute;
-
   top: -15px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
   opacity: 0;
 
-
-
   svg {
-
     fill: $color-secondary;
-
 
     &:hover {
       fill: $color-secondary-shadow;
@@ -150,11 +129,6 @@
 }
 
 .projects__header {
-  h3 {
-    font-family: "Press";
-    color: $color-primary-black;
-  }
-
   margin: 0;
   display: flex;
   justify-content: space-between;
@@ -165,11 +139,14 @@
   position: relative;
   color: $color-primary-black;
   padding: 0 15px;
+
+  h3 {
+    font-family: "Press";
+    color: $color-primary-black;
+  }
 }
 
 .projects__controls {
-
-
   width: 30%;
   display: grid;
   grid-template-columns: auto auto;
@@ -177,14 +154,11 @@
 }
 
 .projects__control {
-  // font-family: "Press";
-
   cursor: pointer;
   color: $color-secondary-border;
   font-size: 16px;
   font-weight: 800;
-
-
+  text-align: center;
   padding: 5px;
   background: $color-secondary-highlight;
   border: 1px solid $color-primary-black;
@@ -205,22 +179,26 @@
   }
 }
 
-
 @include vp-tablet {
   .projects__wrapper {
-
     grid-template-columns: auto;
-    grid-row-gap: 80px;
+    grid-row-gap: 120px;
     width: 70%;
     margin: auto;
+    margin-bottom: 150px;
   }
 
   .projects__block {
-    &:nth-child(2n) {
-      .projects__stack {
-        & svg {
-          fill: $color-secondary-shadow;
+    background: none;
 
+    &:nth-child(2n) {
+      &:hover {
+        .projects__stack {
+          transform: none;
+
+          & svg {
+            fill: $color-secondary-shadow;
+          }
         }
       }
     }
@@ -240,22 +218,8 @@
 
       .projects__stack {
         transform: none;
-
         z-index: 100;
       }
-
-      &:nth-child(2n) {
-        .projects__stack {
-          transform: none;
-
-          & svg {
-            fill: $color-secondary-shadow;
-
-          }
-
-        }
-      }
-
     }
 
     picture {
@@ -269,7 +233,7 @@
       filter: none;
     }
 
-    background: none;
+
   }
 
   .projects__item {
@@ -279,19 +243,19 @@
 
   .projects__stack {
     transform: none;
-    // left: -70px;
     opacity: 1;
-    top: 102%;
+    top: 105%;
     flex-direction: row;
-    // position: relative;
     width: 100%;
     height: auto;
 
+    svg {
+      fill: $color-secondary-shadow;
 
-    li svg {
-      fill: $color-primary-black;
-
+      &:hover {
+        transform: none;
+        fill: $color-secondary-shadow;
+      }
     }
   }
-
 }

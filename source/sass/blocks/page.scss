@@ -28,21 +28,21 @@
 .page__main {
   width: 100%;
   background-color: $color-secondary-highlight;
-background-image: url("../../img/svg/background-intro.svg");
-background-repeat: no-repeat;
-background-size:6000%;
-background-attachment: fixed;
+  background-image: url("../../img/svg/background-intro.svg");
+  background-repeat: no-repeat;
+  background-size: 6000%;
+  background-attachment: fixed;
 
   h1 {
     margin: 80px 0;
-font-family: "Press";
+    font-family: "Press";
     font-style: normal;
-    font-weight:400;
+    font-weight: 400;
     font-size: 50px;
-    line-height:100px;
+    line-height: 100px;
     text-align: center;
-letter-spacing: 2;
-    color:#4b3b3f;
+
+    color: #4b3b3f;
     text-shadow: 13px 8px 0px $color-secondary-highlight;
 
   }
@@ -50,6 +50,16 @@ letter-spacing: 2;
 
 
 
-// section {
-//   height: 100vh;
-// }
+@include vp-tablet {
+  .page__main {
+      h1 {
+overflow: visible;
+    font-size: 39px;
+    margin: 40px 0;
+  }
+  p{
+    margin:  auto auto 40px 16%;
+  }
+  }
+
+}

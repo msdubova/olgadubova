@@ -2,7 +2,9 @@
   position: fixed;
   width: 300px;
   height: 90px;
-
+  position: fixed;
+  top:80%;
+  riGht: 1%;
   ul {
     @include reset-ul();
     display: grid;
@@ -11,15 +13,13 @@
     grid-area: auto;
   }
 
- position: fixed;
-  top:80%;
-  riGht: 2%;
+
 
   svg {
     fill: $color-primary-black;
   }
 
-  span {
+  span {margin-top: 20px;
     display: none;
   }
 
@@ -36,5 +36,32 @@
     }
 
 
+  }
+}
+
+@include vp-tablet {
+  .footer {
+    right: 10%;
+    width: auto;
+    top: 45%;
+
+    ul {
+      grid-template-columns: auto;
+      grid-gap: 30px;
+    }
+
+    a:hover {
+      span {
+        display: none;
+
+      }
+
+      svg {
+       transform: none;
+
+      }
+
+
+    }
   }
 }

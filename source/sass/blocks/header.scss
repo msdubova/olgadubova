@@ -12,19 +12,14 @@
 
 
 .header__nav {
+  position: fixed;
+  width: 10%;
 
-  @include vp-tablet {
-    ul {
-      width: 300px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-    }
-  }
   ul {
     @include reset-ul();
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+
     grid-area: auto;
 
   }
@@ -37,12 +32,13 @@ height: 300px;
 
   span {
     display: none;
+    margin-top: 20px;
   }
 
   a:hover {
     span {
       display: block;
-      margin-top: 20px;
+
     }
 
     svg {
@@ -52,5 +48,48 @@ height: 300px;
     }
 
 
+  }
+}
+
+@include vp-tablet {
+  .header__nav {
+
+
+    width: auto;
+
+    top: 40%;
+
+    ul {
+      height: 200px;
+      grid-template-columns: auto;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    span {
+
+      margin-top: 0;
+
+    }
+
+    a:hover {
+      span {
+        display: none;
+      }
+
+      svg{
+        transform: none;
+      }
+    }
+
+    &--title {
+      top: 0;
+      width: 10%;
+
+      ul {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        grid-area: auto;
+      }
+    }
   }
 }
