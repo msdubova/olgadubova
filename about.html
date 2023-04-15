@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Olga Dubova</title>
+  <link rel="preload" href="fonts/poppins-v20-latin-100.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-100.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-regular.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preload" href="fonts/poppins-v20-latin-700.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body class="page__body">
+
+  <!-- <header class="header">
+    <div class=" header__container container">
+      <a class="header__logo">
+          <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="white">
+          <circle cx="50" cy="50" r="50" />
+        </svg>
+        Olga Dubova
+      </a>
+
+
+    </div> -->
+    <header class="header">
+      <div class=" header__container container">
+        <!-- <a class="header__logo">
+            <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="white">
+            <circle cx="50" cy="50" r="50" />
+          </svg>
+          Olga Dubova
+        </a> -->
+        <nav class="header__nav">
+          <ul>
+            <li>
+            <a href="index.html">
+              <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite_auto.svg#home">
+              </svg>
+              <span>Go home</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects.html" class="menu__button">
+              <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite_auto.svg#iphone">
+              </svg> <span>Projects</span>
+            </a>
+
+          </li>
+          <!-- <li>
+            <a href="about.html">
+              <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite_auto.svg#climb">
+              </svg>
+              <span>About Me</span>
+            </a>
+          </li> -->
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+  <main class="page__main">
+
+
+
+    <section class="section section--title article article--about" id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div>
+          <div>
+            <h3>Get to know me!</h3>
+            <p>Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+              mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+              tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
+
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+              auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
+              rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet
+              lacinia. Aliquam in elementum tellus.</p>
+          </div>
+          <div>
+            <h3>My Skills</h3>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+
+  </main>
+
+
+  <!-- Модалки
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div> -->
+    <footer class="footer">
+      <ul class="socials">
+        <li>
+          <a href="">
+            <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite_auto.svg#letter">
+            </svg>
+            <span>write me</span>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite_auto.svg#git">
+            </svg>
+            <span>github</span>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
+
