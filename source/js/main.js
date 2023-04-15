@@ -63,31 +63,38 @@ window.addEventListener('DOMContentLoaded', () => {
 // 	document.getElementById("smoak-2").classList.remove("anmi-smoak");
 // });
 
-let checkTab = function(){
 
+let btn = document.querySelector('.menu__button');
+let block = document.querySelector('.menu__block');
+let closeBtn = block.querySelector('.menu__close');
+const WIDTH = 770;
+let isOpen = false;
 
-  let heading = document.querySelector('.swiper-slide-active').innerHTML;
+let openModal = () => {
+  block.classList.add('menu__block--active');
+  isOpen = true;
+};
 
-let line = document.querySelector('.tab__line');
-line.innerHTML= heading;
+let closeModal = () => {
+  block.classList.remove('menu__block--active');
+  isOpen = false;
+};
 
+let onClickBtn = (evt) => {
+  if (window.innerWidth < WIDTH) {
+    evt.preventDefault();
+    if (isOpen) {
+      closeModal();
+    } else {
+      openModal();
+    }
+  }
+};
 
-}
+let onCloseBtnClick = () => {
+  closeModal();
+};
 
-let setTab = function() {
-  // let current = document.querySelector('.swiper-slide-active').innerHTML;
+btn.addEventListener('click', onClickBtn);
+closeBtn.addEventListener('click', onCloseBtnClick);
 
-  // let line = document.querySelector('.tab__line');
-  // line.innerHTML = current;
-  let tabButtons = document.querySelectorAll('.tumblr__button');
-
-
-
-  tabButtons.forEach(function(each) {
-    each.addEventListener('click', function(){
-      checkTab();
-    })
-  })
-}
-
-setTab();

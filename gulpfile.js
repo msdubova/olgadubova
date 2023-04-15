@@ -14,6 +14,7 @@ const del = require('del');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
 const gcmq = require('gulp-group-css-media-queries');
+var ghPages = require('gulp-gh-pages');
 
 const css = () => {
   return gulp.src('source/sass/style.scss')
@@ -146,3 +147,7 @@ exports.imagemin = optimizeImages;
 exports.webp = createWebp;
 exports.start = start;
 exports.build = build;
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
