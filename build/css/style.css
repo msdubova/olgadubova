@@ -644,15 +644,13 @@ button,
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 140px;
+  padding: 0 9.7%;
 }
 
 .section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid red;
-  top: 100px;
 }
 
 .section--title {
@@ -953,6 +951,7 @@ button,
 }
 
 .page__main {
+  height: 100vh;
   -webkit-box-flex: 1;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
@@ -1013,13 +1012,20 @@ button,
   transition: 0.5s ease;
 }
 
+.projects {
+  padding-top: 20px;
+  height: 88vh;
+  margin-top: 80px;
+  overflow-y: scroll;
+}
+
+.projects::-webkit-scrollbar {
+  width: 5px;
+}
+
 .projects h2 {
   text-align: left;
   text-transform: uppercase;
-}
-
-.projects__container {
-  height: 100%;
 }
 
 .projects__wrapper {
@@ -1028,13 +1034,13 @@ button,
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
+  -ms-grid-columns: 48% 48%;
+  grid-template-columns: 48% 48%;
+  grid-gap: 30px;
+  grid-column-gap: 50px;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   width: 100%;
-  margin-bottom: 50px;
 }
 
 .projects__block {
@@ -1090,20 +1096,6 @@ button,
 
 .projects__block:hover:nth-child(2n) .projects__stack svg {
   fill: #32272a;
-}
-
-.projects__block picture {
-  width: 100%;
-  height: 350px;
-  display: block;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  border-radius: 0 0 10px 10px;
-  position: relative;
-}
-
-.projects__block picture::-webkit-scrollbar {
-  width: 0;
 }
 
 .projects__block img {
@@ -1184,6 +1176,23 @@ button,
 .projects__header h3 {
   font-family: "Press";
   color: #32272a;
+}
+
+.projects__main {
+  height: 330px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.projects__main::-webkit-scrollbar {
+  width: 0;
+}
+
+.projects__main picture {
+  width: 100%;
+  display: block;
+  border-radius: 0 0 10px 10px;
+  position: relative;
 }
 
 .projects__controls {
@@ -1431,10 +1440,6 @@ button,
     padding: 0 105px;
   }
 
-  .section {
-    padding-top: 50px;
-  }
-
   .page__main h1 {
     overflow: visible;
     font-size: 39px;
@@ -1454,8 +1459,14 @@ button,
     -ms-grid-columns: auto;
     grid-template-columns: auto;
     grid-row-gap: 120px;
+    width: 90%;
     margin: auto;
-    margin-bottom: 150px;
+    padding-bottom: 100px;
+  }
+
+  .projects__main {
+    height: 440px;
+    overflow: hidden;
   }
 
   .projects__block {
@@ -1490,15 +1501,6 @@ button,
     -webkit-transform: none;
     -ms-transform: none;
     transform: none;
-    z-index: 100;
-  }
-
-  .projects__block picture {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    overflow: hidden;
-    max-height: 440px;
   }
 
   .projects__block img {

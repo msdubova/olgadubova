@@ -83,7 +83,7 @@
 
       <section class="section projects" id="projects">
         <div class="container projects__container">
-          <h2>Projects</h2>
+          <h2 class="visually-hidden">Projects</h2>
           <ul class="projects__wrapper">
             <li class="projects__block" id="toys">
               <div class="projects__scroll scroll">
@@ -118,36 +118,40 @@
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code"
                       href="https://github.com/msdubova/844063-mishka-16" target="_blank"> &#60;/&#62;</a> <a
-                      class="projects__control projects__control--brief">The Brief</a>
+                      class="projects__control projects__control--brief">brief</a>
                     <a class="projects__control projects__control--preview"
                       href="https://msdubova.github.io/Mishka-built-/" target="_blank">preview</a>
                   </div>
 
                 </div>
+                <div class="projects__main">
+                  <picture>
 
-                <picture>
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/toys-mobile-2x.webp 2x, ./img/toys-mobile-1x.webp 1x">
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/toys-mobile-2x.webp 2x, ./img/toys-mobile-1x.webp 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/toys-tablet-2x.webp 2x, ./img/toys-tablet-1x.webp 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/toys-tablet-2x.webp 2x, ./img/toys-tablet-1x.webp 1x">
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <source type="image/webp" srcset="./img/toys-2x.webp 2x, ./img/toys-1x.webp 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <source type="image/webp" srcset="./img/toys-2x.webp 2x, ./img/toys-1x.webp 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source media="(max-width: 767px)"
+                      srcset="./img/toys-mobile-2x.png 2x, ./img/toys-mobile-1x.png 1x">
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source media="(max-width: 767px)" srcset="./img/toys-mobile-2x.png 2x, ./img/toys-mobile-1x.png 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/toys-tablet-2x.png 2x, ./img/toys-tablet-1x.png 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source media="(max-width: 1199px)" srcset="./img/toys-tablet-2x.png 2x, ./img/toys-tablet-1x.png 1x">
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <img loading="lazy" width="555" height="350" srcset=".img/toys-2x.png 2x" src="./img/toys-1x.png"
+                      alt="Toys-project preview">
+                  </picture>
+                </div>
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <img loading="lazy" width="555" height="350" srcset=".img/toys-2x.png 2x" src="./img/toys-1x.png"
-                    alt="Toys-project preview">
-                </picture>
               </div>
 
               <ul class="projects__stack">
@@ -232,38 +236,40 @@
                   <h3>Coffee</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code" href="https://github.com/msdubova/Drink2Go"
-                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">The
-                      Brief</a>
+                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">brief</a>
                     <a class="projects__control projects__control--preview" href="https://msdubova.github.io/Coffee/"
                       target="_blank">preview</a>
                   </div>
 
                 </div>
-                <picture>
+                <div class="projects__main">
+                  <picture>
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/coffee-mobile-2x.webp 2x, ./img/coffee-mobile-1x.webp 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/coffee-mobile-2x.webp 2x, ./img/coffee-mobile-1x.webp 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/coffee-tablet-2x.webp 2x, ./img/coffee-tablet-1x.webp 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/coffee-tablet-2x.webp 2x, ./img/coffee-tablet-1x.webp 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <source type="image/webp" srcset="./img/coffee-2x.webp 2x, ./img/coffee-1x.webp 1x">
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <source type="image/webp" srcset="./img/coffee-2x.webp 2x, ./img/coffee-1x.webp 1x">
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source media="(max-width: 767px)"
-                    srcset="./img/coffee-mobile-2x.png 2x, ./img/coffee-mobile-1x.png 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source media="(max-width: 767px)"
+                      srcset="./img/coffee-mobile-2x.png 2x, ./img/coffee-mobile-1x.png 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/coffee-tablet-2x.png 2x, ./img/coffee-tablet-1x.png 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/coffee-tablet-2x.png 2x, ./img/coffee-tablet-1x.png 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <img loading="lazy" width="555" height="350" srcset=".img/coffee-2x.png 2x" src="./img/coffee-1x.png"
-                    alt="Coffee-project preview">
-                </picture>
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <img loading="lazy" width="555" height="350" srcset=".img/coffee-2x.png 2x"
+                      src="./img/coffee-1x.png" alt="Coffee-project preview">
+                  </picture>
+                </div>
+
               </div>
               <ul class="projects__stack">
 
@@ -355,37 +361,39 @@
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code"
                       href="https://github.com/msdubova/844063-device-24" target="_blank"> &#60;/&#62;</a> <a
-                      class="projects__control projects__control--brief">The Brief</a>
+                      class="projects__control projects__control--brief">brief</a>
                     <a class="projects__control projects__control--preview"
                       href="https://msdubova.github.io/844063-device-24/" target="_blank">preview</a>
                   </div>
 
                 </div>
-                <picture>
+                <div class="projects__main">
+                  <picture>
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/device-mobile-2x.webp 2x, ./img/device-mobile-1x.webp 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/device-mobile-2x.webp 2x, ./img/device-mobile-1x.webp 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/device-tablet-2x.webp 2x, ./img/device-tablet-1x.webp 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/device-tablet-2x.webp 2x, ./img/device-tablet-1x.webp 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <source type="image/webp" srcset="./img/device-2x.webp 2x, ./img/device-1x.webp 1x">
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <source type="image/webp" srcset="./img/device-2x.webp 2x, ./img/device-1x.webp 1x">
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source media="(max-width: 767px)"
-                    srcset="./img/device-mobile-2x.png 2x, ./img/device-mobile-1x.png 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source media="(max-width: 767px)"
+                      srcset="./img/device-mobile-2x.png 2x, ./img/device-mobile-1x.png 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/device-tablet-2x.png 2x, ./img/device-tablet-1x.png 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/device-tablet-2x.png 2x, ./img/device-tablet-1x.png 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <img loading="lazy" width="555" height="350" srcset=".img/device-2x.png 2x" src="./img/device-1x.png"
-                    alt="device-project preview">
-                </picture>
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <img loading="lazy" width="555" height="350" srcset=".img/device-2x.png 2x"
+                      src="./img/device-1x.png" alt="device-project preview">
+                  </picture>
+                </div>
               </div>
               <ul class="projects__stack">
 
@@ -476,38 +484,39 @@
                   <h3>Antarctica</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code" href="https://github.com/msdubova/Antarctica"
-                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">The
-                      Brief</a>
+                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">brief</a>
                     <a class="projects__control projects__control--preview"
                       href="https://msdubova.github.io/Antarctica/" target="_blank">preview</a>
                   </div>
 
                 </div>
-                <picture>
+                <div class="projects__main">
+                  <picture>
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/antarctica-mobile-2x.webp 2x, ./img/antarctica-mobile-1x.webp 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/antarctica-mobile-2x.webp 2x, ./img/antarctica-mobile-1x.webp 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/antarctica-tablet-2x.webp 2x, ./img/antarctica-tablet-1x.webp 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/antarctica-tablet-2x.webp 2x, ./img/antarctica-tablet-1x.webp 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <source type="image/webp" srcset="./img/antarctica-2x.webp 2x, ./img/antarctica-1x.webp 1x">
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <source type="image/webp" srcset="./img/antarctica-2x.webp 2x, ./img/antarctica-1x.webp 1x">
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source media="(max-width: 767px)"
-                    srcset="./img/antarctica-mobile-2x.png 2x, ./img/antarctica-mobile-1x.png 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source media="(max-width: 767px)"
+                      srcset="./img/antarctica-mobile-2x.png 2x, ./img/antarctica-mobile-1x.png 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/antarctica-tablet-2x.png 2x, ./img/antarctica-tablet-1x.png 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/antarctica-tablet-2x.png 2x, ./img/antarctica-tablet-1x.png 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <img loading="lazy" width="555" height="350" srcset=".img/antarctica-2x.png 2x"
-                    src="./img/antarctica-1x.png" alt="antarctica-project preview">
-                </picture>
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <img loading="lazy" width="555" height="350" srcset=".img/antarctica-2x.png 2x"
+                      src="./img/antarctica-1x.png" alt="antarctica-project preview">
+                  </picture>
+                </div>
               </div>
               <ul class="projects__stack">
 
@@ -600,37 +609,39 @@
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code"
                       href="https://github.com/msdubova/supergym-HTMLacademy-OlgaDubova" target="_blank">
-                      &#60;/&#62;</a> <a class="projects__control projects__control--brief">The Brief</a>
+                      &#60;/&#62;</a> <a class="projects__control projects__control--brief">brief</a>
                     <a class="projects__control projects__control--preview"
                       href="https://msdubova.github.io/supergym-HTMLacademy-OlgaDubova/" target="_blank">preview</a>
                   </div>
 
                 </div>
-                <picture>
+                <div class="projects__main">
+                  <picture>
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/supergym-mobile-2x.webp 2x, ./img/supergym-mobile-1x.webp 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/supergym-mobile-2x.webp 2x, ./img/supergym-mobile-1x.webp 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/supergym-tablet-2x.webp 2x, ./img/supergym-tablet-1x.webp 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/supergym-tablet-2x.webp 2x, ./img/supergym-tablet-1x.webp 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <source type="image/webp" srcset="./img/supergym-2x.webp 2x, ./img/supergym-1x.webp 1x">
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <source type="image/webp" srcset="./img/supergym-2x.webp 2x, ./img/supergym-1x.webp 1x">
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source media="(max-width: 767px)"
-                    srcset="./img/supergym-mobile-2x.png 2x, ./img/supergym-mobile-1x.png 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source media="(max-width: 767px)"
+                      srcset="./img/supergym-mobile-2x.png 2x, ./img/supergym-mobile-1x.png 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/supergym-tablet-2x.png 2x, ./img/supergym-tablet-1x.png 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/supergym-tablet-2x.png 2x, ./img/supergym-tablet-1x.png 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <img loading="lazy" width="555" height="350" srcset=".img/supergym-2x.png 2x"
-                    src="./img/supergym-1x.png" alt="supergym-project preview">
-                </picture>
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <img loading="lazy" width="555" height="350" srcset=".img/supergym-2x.png 2x"
+                      src="./img/supergym-1x.png" alt="supergym-project preview">
+                  </picture>
+                </div>
               </div>
               <ul class="projects__stack">
 
@@ -721,96 +732,90 @@
                   <h3>Smart</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code" href="https://github.com/msdubova/smartdevice"
-                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">The
-                      Brief</a>
+                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">brief</a>
                     <a class="projects__control projects__control--preview"
                       href="https://msdubova.github.io/smartdevice/" target="_blank">preview</a>
                   </div>
 
                 </div>
-                <picture>
+                <div class="projects__main">
+                  <picture>
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source type="image/webp" media="(max-width: 767px)"
-                    srcset="./img/smart-mobile-2x.webp 2x, ./img/smart-mobile-1x.webp 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source type="image/webp" media="(max-width: 767px)"
+                      srcset="./img/smart-mobile-2x.webp 2x, ./img/smart-mobile-1x.webp 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source type="image/webp" media="(max-width: 1199px)"
-                    srcset="./img/smart-tablet-2x.webp 2x, ./img/smart-tablet-1x.webp 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source type="image/webp" media="(max-width: 1199px)"
+                      srcset="./img/smart-tablet-2x.webp 2x, ./img/smart-tablet-1x.webp 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <source type="image/webp" srcset="./img/smart-2x.webp 2x, ./img/smart-1x.webp 1x">
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <source type="image/webp" srcset="./img/smart-2x.webp 2x, ./img/smart-1x.webp 1x">
 
-                  <!-- 1x: 290x299; 2x: 580x598 -->
-                  <source media="(max-width: 767px)"
-                    srcset="./img/smart-mobile-2x.png 2x, ./img/smart-mobile-1x.png 1x">
+                    <!-- 1x: 290x299; 2x: 580x598 -->
+                    <source media="(max-width: 767px)"
+                      srcset="./img/smart-mobile-2x.png 2x, ./img/smart-mobile-1x.png 1x">
 
-                  <!-- 1x: 670x460; 2x: 1340x920 -->
-                  <source media="(max-width: 1199px)"
-                    srcset="./img/smart-tablet-2x.png 2x, ./img/smart-tablet-1x.png 1x">
+                    <!-- 1x: 670x460; 2x: 1340x920 -->
+                    <source media="(max-width: 1199px)"
+                      srcset="./img/smart-tablet-2x.png 2x, ./img/smart-tablet-1x.png 1x">
 
-                  <!-- 1x: 555x350; 2x: 1110x700 -->
-                  <img loading="lazy" width="555" height="350" srcset=".img/smart-2x.png 2x" src="./img/smart-1x.png"
-                    alt="smart-project preview">
-                </picture>
-              </div>
-              <ul class="projects__stack">
+                    <!-- 1x: 555x350; 2x: 1110x700 -->
+                    <img loading="lazy" width="555" height="350" srcset=".img/smart-2x.png 2x" src="./img/smart-1x.png"
+                      alt="smart-project preview">
+                  </picture>
+                </div>
+</div>
+                <ul class="projects__stack">
 
-                <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#queries">
-                </svg>
-              </li> -->
-                <li>
-                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#html5">
-                  </svg>
-                </li>
-                <li>
-                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#css3">
-                  </svg>
-                </li>
 
-                <li>
-                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#sass">
-                  </svg>
-                </li>
-                <li>
-                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#npm">
-                  </svg>
-                </li>
-                <li>
-                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#gulp">
-                  </svg>
-                </li>
-                <li>
-                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#github">
-                  </svg>
-                </li>
-                <li>
-                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#node-js">
-                  </svg>
-                </li>
-                <li>
-                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <use href="img/sprite_auto.svg#js">
-                  </svg>
-                </li>
-                <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#a11y">
-                </svg>
-              </li> -->
+                  <li>
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#html5">
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#css3">
+                    </svg>
+                  </li>
+
+                  <li>
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#sass">
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#npm">
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#gulp">
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#github">
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#node-js">
+                    </svg>
+                  </li>
+                  <li>
+                    <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#js">
+                    </svg>
+                  </li>
 
 
 
-              </ul>
+
+                </ul>
+
             </li>
 
 

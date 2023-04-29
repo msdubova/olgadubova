@@ -1,9 +1,5 @@
 .section {
   display: flex;
-  border: 1px solid red;
-
-  top: 100px;
-  // padding-top: 100px;
 
   &--title {
     // height: 100vh;
@@ -45,7 +41,9 @@ background-position: right 200%;
 
 @include vp-tablet {
   .section {
-    padding-top: 50px;
+
+
+
   }
 }
 
