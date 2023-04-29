@@ -45,5 +45,23 @@
 
 @include vp-mobile {
   .footer {
+    position: relative;
+    width: 100%;
+    background-color: $color-secondary-highlight;
+    border-top: 1px solid $color-secondary-shadow;
+  }
+
+  .footer__container {
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer__socials {
+    width: 100%;
+    max-width: 400px;
+
+    svg {
+    fill: $color-secondary-border;}
   }
 }

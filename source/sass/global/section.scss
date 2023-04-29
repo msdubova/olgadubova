@@ -16,40 +16,41 @@
   align-items: center;
   height: fit-content;
 
-position: relative;
+  position: relative;
 
-background-repeat: no-repeat;
-background-size: contain;
-background-position: right 200%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right 200%;
 
 
-  p{
+  p {
 
-     max-width:500px;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 25px;
-      letter-spacing: 1px;
+    max-width: 500px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1px;
 
-      margin: auto;
-      margin-left:15%;
-      margin-bottom: 50px;
+    margin: auto;
+    margin-left: 15%;
+    margin-bottom: 50px;
   }
 
 }
 
 @include vp-tablet {
-  .section {
-
-
-
-  }
+  .section {}
 }
 
 
 @include vp-mobile {
+  .section {
+    height: auto;
+  }
+
   .section--title {
     padding-top: 100px;
+    height: auto;
   }
 }

@@ -7,6 +7,10 @@
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+
+  &--mobile {
+    display: none;
+  }
 }
 
 @keyframes typing {
@@ -22,9 +26,21 @@
 }
 
 
-@include vp-mobile {
+@include vp-tablet {
   .typing {
     animation: none;
     border: none;
   }
+}
+
+@include vp-mobile {
+.typing {
+  &--desktop{
+    display: none;
+  }
+
+  &--mobile {
+    display: block;
+  }
+}
 }

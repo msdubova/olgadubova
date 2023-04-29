@@ -76,19 +76,18 @@ height: 100vh;
 }
 
 @include vp-mobile {
+  .page__body {
+    background: $color-secondary;
+  }
   .page__main {
-    // background-image: url("./img/svg/diagonal-lines.svg");
-
-    background-repeat: repeat;
-    width: 100%;
-    height: 100%;
-
+height: auto;
     h1 {
 
       font-size: 2em;
       line-height: 45px;
       word-wrap: break-word;
       overflow: visible;
+      text-shadow: 4px 4px 0px $color-secondary-highlight;
     }
 
     p {
