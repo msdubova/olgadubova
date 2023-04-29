@@ -1,34 +1,20 @@
 .header {
   position: fixed;
+  width: 40%;
+  margin-right: auto;
 }
-
 
 .header__container {
   display: flex;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-
-
 .header__nav {
-  position: fixed;
-  width: 10%;
-
-  ul {
-    @include reset-ul();
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    grid-area: auto;
-
-  }
-
-  svg {
-    fill: $color-secondary-highlight;
-
-    stroke: $color-secondary-shadow;
-  }
+  @include reset-ul();
+  width: 200px;
+  display: grid;
+  grid-auto-flow: column;
 
   span {
     display: none;
@@ -38,6 +24,7 @@
   a:hover {
     span {
       display: block;
+      position: absolute;
     }
 
     svg {
@@ -49,100 +36,64 @@
 }
 
 @include vp-tablet {
-  .header__nav {
-
-
-    width: auto;
-
-    top: 0;
-
-    ul {
-      height: 200px;
-      grid-template-columns: auto;
-      grid-template-rows: 1fr 1fr 1fr;
-    }
-
-    span {
-
-      margin-top: 0;
-
-    }
-
-    a:hover {
-      span {
-        display: none;
-      }
-
-      svg {
-        transform: none;
-      }
-    }
-
-    &--title {
-
-      width: 10%;
-
-      ul {
-        grid-auto-flow: column;
-        // grid-template-columns: 1fr 1fr 1fr;
-
-        // grid-area: auto;
-      }
-    }
+  .header__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
+
 @include vp-mobile {
-  .header {
-    position: relative;
-    width: 100%;
-    height: 60px;
-  }
+  // .header {
+  //   position: relative;
+  //   width: 100%;
+  //   height: 60px;
+  // }
 
-  .header__container {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-  }
+  // .header__container {
+  //   width: 100%;
+  //   height: 100%;
+  //   padding: 0;
+  // }
 
-  .header__nav {
-    position: relative;
-    width: 100%;
+  // .header__nav {
+  //   position: relative;
+  //   width: 100%;
 
-    ul {
-      height: 100%;
-      grid-template-rows: auto;
-      grid-template-columns: 45% 45%;
-      grid-column-gap: 10%;
-    }
+  //   ul {
+  //     height: 100%;
+  //     grid-template-rows: auto;
+  //     grid-template-columns: 45% 45%;
+  //     grid-column-gap: 10%;
+  //   }
 
-    a {
-      width: 100%;
-      height: 100%;
-      display: block;
+  //   a {
+  //     width: 100%;
+  //     height: 100%;
+  //     display: block;
 
-      &:hover {
-        span {
-          display: grid;
-        }
-      }
-    }
+  //     &:hover {
+  //       span {
+  //         display: grid;
+  //       }
+  //     }
+  //   }
 
-    svg {
-      display: none;
-    }
+  //   svg {
+  //     display: none;
+  //   }
 
-    span {
-      display: flex;
-      width: 100%;
-      height: 100%;
-      padding: 5px;
-      text-transform: uppercase;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      font-weight: 700;
+  //   span {
+  //     display: flex;
+  //     width: 100%;
+  //     height: 100%;
+  //     padding: 5px;
+  //     text-transform: uppercase;
+  //     flex-direction: column;
+  //     align-items: center;
+  //     justify-content: center;
+  //     font-weight: 700;
 
-    }
-  }
+  //   }
+  // }
 }

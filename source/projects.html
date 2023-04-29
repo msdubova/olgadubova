@@ -18,16 +18,11 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <div class=" header__container container">
-      <!-- <a class="header__logo">
-          <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="white">
-          <circle cx="50" cy="50" r="50" />
-        </svg>
-        Olga Dubova
-      </a> -->
-      <nav class="header__nav">
-        <ul>
+  <div class="page__wrapper">
+    <header class="header menu">
+      <div class=" header__container container">
+        <ul class="header__nav header__nav--title">
+
           <li>
             <a href="index.html">
               <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -53,946 +48,784 @@
             </a>
           </li>
         </ul>
-      </nav>
-
-    </div>
-  </header>
-  <main class="page__main">
 
 
-    <section class="section article article--projects projects" id="projects">
-      <div class="container projects__container">
-        <h2>Projects</h2>
-        <ul class="projects__wrapper">
-          <li class="projects__block" id="toys">
-            <div class="projects__scroll scroll">
-              <div class="ico animated">
-                <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
-                  style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                  <defs>
-                    <clipPath id="cut-off-arrow">
-                      <circle cx="306" cy="306" r="287" />
-                    </clipPath>
 
-                    <filter id="goo">
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                        result="goo" />
-                      <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
 
-                  </defs>
-                  <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+      </div>
+
+
+      <ul class="menu__block">
+        <span class="menu__close"></span>
+        <li class="menu__item"><a href="projects.html#toys"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-toys"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#coffee"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-coffee"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#device"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-device"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#antarctica"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-antarctica"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#supergym"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-supergym"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#smart"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-smart"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="">more</a></li>
+      </ul>
+    </header>
+    <main class="page__main">
+
+
+      <section class="section projects" id="projects">
+        <div class="container projects__container">
+          <h2>Projects</h2>
+          <ul class="projects__wrapper">
+            <li class="projects__block" id="toys">
+              <div class="projects__scroll scroll">
+                <div class="ico animated">
+                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
+                    style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <defs>
+                      <clipPath id="cut-off-arrow">
+                        <circle cx="306" cy="306" r="287" />
+                      </clipPath>
+
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                          result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                      </filter>
+
+                    </defs>
+                    <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
                     l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
                     c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
                     c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
-                </svg>
-              </div>
-            </div>
-
-            <div class="projects__item">
-              <div class="projects__header">
-                <div class="projects__controls">
-                  <a class="projects__control projects__control--code"
-                    href="https://github.com/msdubova/844063-mishka-16" target="_blank"> &#60;/&#62;</a>
-                  <a class="projects__control projects__control--preview"
-                    href="https://msdubova.github.io/Mishka-built-/" target="_blank">preview</a>
+                  </svg>
                 </div>
-                <h3>Toys</h3>
               </div>
 
-              <picture>
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                  srcset="./img/toys-mobile-2x.webp 2x, ./img/toys-mobile-1x.webp 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 1199px)"
-                  srcset="./img/toys-tablet-2x.webp 2x, ./img/toys-tablet-1x.webp 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <source
-                  type="image/webp"
-                  srcset="./img/toys-2x.webp 2x, ./img/toys-1x.webp 1x">
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="./img/toys-mobile-2x.png 2x, ./img/toys-mobile-1x.png 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="./img/toys-tablet-2x.png 2x, ./img/toys-tablet-1x.png 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <img loading="lazy" width="555" height="350"
-                  srcset=".img/toys-2x.png 2x" src="./img/toys-1x.png"
-                  alt="Toys-project preview">
-              </picture>
-            </div>
-
-            <ul class="projects__stack">
-
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#queries">
-                </svg>
-              </li> -->
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#html5">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#css3">
-                </svg>
-              </li>
-
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#sass">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#npm">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#gulp">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#github">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#node-js">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#js">
-                </svg>
-              </li>
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#a11y">
-                </svg>
-              </li> -->
-
-
-
-            </ul>
-          </li>
-          <li class="projects__block" id="coffee">
-            <div class="projects__scroll scroll">
-              <div class="ico animated">
-
-                <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
-                  style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                  <defs>
-                    <clipPath id="cut-off-arrow">
-                      <circle cx="306" cy="306" r="287" />
-                    </clipPath>
-
-                    <filter id="goo">
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                        result="goo" />
-                      <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-
-                  </defs>
-                  <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
-                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
-                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
-                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
-                </svg>
-              </div>
-            </div>
-            <div class="projects__item">
-              <div class="projects__header">
-                <div class="projects__controls">
-                  <a class="projects__control projects__control--code" href="https://github.com/msdubova/Drink2Go"
-                    target="_blank"> &#60;/&#62;</a>
-                  <a class="projects__control projects__control--preview" href="https://msdubova.github.io/Coffee/"
-                    target="_blank">preview</a>
-                </div>
-                <h3>Coffee</h3>
-              </div>
-              <picture>
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                  srcset="./img/coffee-mobile-2x.webp 2x, ./img/coffee-mobile-1x.webp 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 1199px)"
-                  srcset="./img/coffee-tablet-2x.webp 2x, ./img/coffee-tablet-1x.webp 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <source
-                  type="image/webp"
-                  srcset="./img/coffee-2x.webp 2x, ./img/coffee-1x.webp 1x">
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="./img/coffee-mobile-2x.png 2x, ./img/coffee-mobile-1x.png 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="./img/coffee-tablet-2x.png 2x, ./img/coffee-tablet-1x.png 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <img loading="lazy" width="555" height="350"
-                  srcset=".img/coffee-2x.png 2x" src="./img/coffee-1x.png"
-                  alt="Coffee-project preview">
-              </picture>
-            </div>
-            <ul class="projects__stack">
-
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#queries">
-                </svg>
-              </li> -->
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#html5">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#css3">
-                </svg>
-              </li>
-
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#sass">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#npm">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#gulp">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#github">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#node-js">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#js">
-                </svg>
-              </li>
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#a11y">
-                </svg>
-              </li> -->
-
-
-
-            </ul>
-          </li>
-          <li class="projects__block" id="device">
-            <div class="projects__scroll scroll">
-              <div class="ico animated">
-                <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
-                  style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                  <defs>
-                    <clipPath id="cut-off-arrow">
-                      <circle cx="306" cy="306" r="287" />
-                    </clipPath>
-
-                    <filter id="goo">
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                        result="goo" />
-                      <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-
-                  </defs>
-                  <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
-                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
-                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
-                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
-                </svg>
-              </div>
-            </div>
-            <div class="projects__item">
-              <div class="projects__header">
-                <div class="projects__controls">
-                  <a class="projects__control projects__control--code"
-                    href="https://github.com/msdubova/844063-device-24" target="_blank"> &#60;/&#62;</a>
-                  <a class="projects__control projects__control--preview"
-                    href="https://msdubova.github.io/844063-device-24/" target="_blank">preview</a>
-                </div>
-                <h3>Device</h3>
-              </div>
-              <picture>
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                  srcset="./img/device-mobile-2x.webp 2x, ./img/device-mobile-1x.webp 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 1199px)"
-                  srcset="./img/device-tablet-2x.webp 2x, ./img/device-tablet-1x.webp 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <source
-                  type="image/webp"
-                  srcset="./img/device-2x.webp 2x, ./img/device-1x.webp 1x">
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="./img/device-mobile-2x.png 2x, ./img/device-mobile-1x.png 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="./img/device-tablet-2x.png 2x, ./img/device-tablet-1x.png 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <img loading="lazy" width="555" height="350"
-                  srcset=".img/device-2x.png 2x" src="./img/device-1x.png"
-                  alt="device-project preview">
-              </picture>
-            </div>
-            <ul class="projects__stack">
-
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#queries">
-                </svg>
-              </li> -->
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#html5">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#css3">
-                </svg>
-              </li>
-
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#sass">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#npm">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#gulp">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#github">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#node-js">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#js">
-                </svg>
-              </li>
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#a11y">
-                </svg>
-              </li> -->
-
-
-
-            </ul>
-          </li>
-          <li class="projects__block" id="antarctica">
-            <div class="projects__scroll scroll">
-              <div class="ico animated">
-                <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
-                  style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                  <defs>
-                    <clipPath id="cut-off-arrow">
-                      <circle cx="306" cy="306" r="287" />
-                    </clipPath>
-
-                    <filter id="goo">
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                        result="goo" />
-                      <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-
-                  </defs>
-                  <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
-                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
-                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
-                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
-                </svg>
-              </div>
-            </div>
-            <div class="projects__item">
-              <div class="projects__header">
-                <div class="projects__controls">
-                  <a class="projects__control projects__control--code" href="https://github.com/msdubova/Antarctica"
-                    target="_blank"> &#60;/&#62;</a>
-                  <a class="projects__control projects__control--preview" href="https://msdubova.github.io/Antarctica/"
-                    target="_blank">preview</a>
-                </div>
-                <h3>Antarctica</h3>
-              </div>
-              <picture>
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                  srcset="./img/antarctica-mobile-2x.webp 2x, ./img/antarctica-mobile-1x.webp 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 1199px)"
-                  srcset="./img/antarctica-tablet-2x.webp 2x, ./img/antarctica-tablet-1x.webp 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <source
-                  type="image/webp"
-                  srcset="./img/antarctica-2x.webp 2x, ./img/antarctica-1x.webp 1x">
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="./img/antarctica-mobile-2x.png 2x, ./img/antarctica-mobile-1x.png 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="./img/antarctica-tablet-2x.png 2x, ./img/antarctica-tablet-1x.png 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <img loading="lazy" width="555" height="350"
-                  srcset=".img/antarctica-2x.png 2x" src="./img/antarctica-1x.png"
-                  alt="antarctica-project preview">
-              </picture>
-            </div>
-            <ul class="projects__stack">
-
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#queries">
-                </svg>
-              </li> -->
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#html5">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#css3">
-                </svg>
-              </li>
-
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#sass">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#npm">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#gulp">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#github">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#node-js">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#js">
-                </svg>
-              </li>
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#a11y">
-                </svg>
-              </li> -->
-
-
-
-            </ul>
-          </li>
-          <li class="projects__block" id="supergym">
-            <div class="projects__scroll scroll">
-              <div class="ico animated">
-                <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
-                  style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                  <defs>
-                    <clipPath id="cut-off-arrow">
-                      <circle cx="306" cy="306" r="287" />
-                    </clipPath>
-
-                    <filter id="goo">
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                        result="goo" />
-                      <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-
-                  </defs>
-                  <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
-                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
-                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
-                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
-                </svg>
-              </div>
-            </div>
-            <div class="projects__item">
-              <div class="projects__header">
-                <div class="projects__controls">
-                  <a class="projects__control projects__control--code"
-                    href="https://github.com/msdubova/supergym-HTMLacademy-OlgaDubova" target="_blank"> &#60;/&#62;</a>
-                  <a class="projects__control projects__control--preview"
-                    href="https://msdubova.github.io/supergym-HTMLacademy-OlgaDubova/" target="_blank">preview</a>
-                </div>
-                <h3>
-                  SuperGym</h3>
-              </div>
-              <picture>
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                  srcset="./img/supergym-mobile-2x.webp 2x, ./img/supergym-mobile-1x.webp 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 1199px)"
-                  srcset="./img/supergym-tablet-2x.webp 2x, ./img/supergym-tablet-1x.webp 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <source
-                  type="image/webp"
-                  srcset="./img/supergym-2x.webp 2x, ./img/supergym-1x.webp 1x">
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="./img/supergym-mobile-2x.png 2x, ./img/supergym-mobile-1x.png 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="./img/supergym-tablet-2x.png 2x, ./img/supergym-tablet-1x.png 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <img loading="lazy" width="555" height="350"
-                  srcset=".img/supergym-2x.png 2x" src="./img/supergym-1x.png"
-                  alt="supergym-project preview">
-              </picture>
-            </div>
-            <ul class="projects__stack">
-
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#queries">
-                </svg>
-              </li> -->
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#html5">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#css3">
-                </svg>
-              </li>
-
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#sass">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#npm">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#gulp">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#github">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#node-js">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#js">
-                </svg>
-              </li>
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#a11y">
-                </svg>
-              </li> -->
-
-
-
-            </ul>
-          </li>
-          <li class="projects__block" id="smart">
-            <div class="projects__scroll scroll">
-              <div class="ico animated">
-                <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
-                  style="enable-background:new 0 0 612 612;" xml:space="preserve">
-                  <defs>
-                    <clipPath id="cut-off-arrow">
-                      <circle cx="306" cy="306" r="287" />
-                    </clipPath>
-
-                    <filter id="goo">
-                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
-                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
-                        result="goo" />
-                      <feBlend in="SourceGraphic" in2="goo" />
-                    </filter>
-
-                  </defs>
-                  <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
-                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
-                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
-                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
-                </svg>
-              </div>
-            </div>
-            <div class="projects__item">
-              <div class="projects__header">
-                <div class="projects__controls">
-                  <a class="projects__control projects__control--code" href="https://github.com/msdubova/smartdevice"
-                    target="_blank"> &#60;/&#62;</a>
-                  <a class="projects__control projects__control--preview" href="https://msdubova.github.io/smartdevice/"
-                    target="_blank">preview</a>
-                </div>
-                <h3>Smart</h3>
-              </div>
-              <picture>
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 767px)"
-                  srcset="./img/smart-mobile-2x.webp 2x, ./img/smart-mobile-1x.webp 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  type="image/webp"
-                  media="(max-width: 1199px)"
-                  srcset="./img/smart-tablet-2x.webp 2x, ./img/smart-tablet-1x.webp 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <source
-                  type="image/webp"
-                  srcset="./img/smart-2x.webp 2x, ./img/smart-1x.webp 1x">
-
-                <!-- 1x: 290x299; 2x: 580x598 -->
-                <source
-                  media="(max-width: 767px)"
-                  srcset="./img/smart-mobile-2x.png 2x, ./img/smart-mobile-1x.png 1x">
-
-                <!-- 1x: 670x460; 2x: 1340x920 -->
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="./img/smart-tablet-2x.png 2x, ./img/smart-tablet-1x.png 1x">
-
-                <!-- 1x: 555x350; 2x: 1110x700 -->
-                <img loading="lazy" width="555" height="350"
-                  srcset=".img/smart-2x.png 2x" src="./img/smart-1x.png"
-                  alt="smart-project preview">
-              </picture>
-            </div>
-            <ul class="projects__stack">
-
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#queries">
-                </svg>
-              </li> -->
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#html5">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#css3">
-                </svg>
-              </li>
-
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#sass">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#npm">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#gulp">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#github">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#node-js">
-                </svg>
-              </li>
-              <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#js">
-                </svg>
-              </li>
-              <!-- <li>
-                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                  <use href="img/sprite_auto.svg#a11y">
-                </svg>
-              </li> -->
-
-
-
-            </ul>
-          </li>
-
-
-          <!--
-          <div class="projects__description"> -->
-          <!-- <div class="note-container">
-              <div class="sticky-note sticky-note-one" contenteditable="true">SMARTDEVICE</div>
-            </div> -->
-          <!-- <div class="tabs">
-              <ul>
-                <li>
-                  <button class="btn">
-                    Smart
-                  </button>
-                </li>
-                <li>
-                  <button class="btn">
-                    ANtarctica
-                  </button>
-                </li>
-                <li>
-                  <button class="btn">
-                    Coffee
-                  </button>
-                </li>
-                <li>
-                  <button class="btn">
-                    Device
-                  </button>
-                </li>
-                <li>
-                  <button class="btn">
-                    Toys
-                  </button>
-                </li>
-                <li>
-                  <button class="btn">
-                    SuperGym
-                  </button>
-                </li>
-              </ul>
-            </div> -->
-          <!-- <h3>
-
-            </h3>
-            <ul>
-
-            </ul>
-            <a>code</a>
-            <a>preview</a>
-          </div> -->
-          <!-- <div class="tv">
-            <div class="tele">
-
-              <div class="screen ">
-                <div class="swiper slider">
-                  <div class="swiper-wrapper  ">
-
-                    <div class="slider__item projects__item projects__item--smart swiper-slide">Smart</div>
-                    <div class="slider__item projects__item projects__item--antarctica swiper-slide">ANtarctica</div>
-                    <div class="slider__item projects__item projects__item--coffee swiper-slide">Coffee</div>
-                    <div class="slider__item projects__item projects__item--device swiper-slide">Device</div>
-                    <div class="slider__item projects__item projects__item--toys swiper-slide">Toys</div>
-                    <div class="slider__item projects__item projects__item--supergym swiper-slide">SuperGym</div>
-
+              <div class="projects__item">
+                <div class="projects__header">
+                  <h3>Toys</h3>
+                  <div class="projects__controls">
+                    <a class="projects__control projects__control--code"
+                      href="https://github.com/msdubova/844063-mishka-16" target="_blank"> &#60;/&#62;</a> <a
+                      class="projects__control projects__control--brief">The Brief</a>
+                    <a class="projects__control projects__control--preview"
+                      href="https://msdubova.github.io/Mishka-built-/" target="_blank">preview</a>
                   </div>
 
-                  <div class=""></div>
-                  <div class=""></div>
                 </div>
 
+                <picture>
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/toys-mobile-2x.webp 2x, ./img/toys-mobile-1x.webp 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/toys-tablet-2x.webp 2x, ./img/toys-tablet-1x.webp 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <source type="image/webp" srcset="./img/toys-2x.webp 2x, ./img/toys-1x.webp 1x">
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source media="(max-width: 767px)" srcset="./img/toys-mobile-2x.png 2x, ./img/toys-mobile-1x.png 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source media="(max-width: 1199px)" srcset="./img/toys-tablet-2x.png 2x, ./img/toys-tablet-1x.png 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <img loading="lazy" width="555" height="350" srcset=".img/toys-2x.png 2x" src="./img/toys-1x.png"
+                    alt="Toys-project preview">
+                </picture>
               </div>
 
-              <div class="controls">
-                <ul class="sound">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-                <div class="tab__controls">
-                  <h3 class="tab__line">
-                    Smart
-                  </h3>
-                  <ul></ul>
+              <ul class="projects__stack">
+
+
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#html5">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#css3">
+                  </svg>
+                </li>
+
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#sass">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#npm">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#gulp">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#github">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#node-js">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#js">
+                  </svg>
+                </li>
+
+
+
+
+              </ul>
+            </li>
+            <li class="projects__block" id="coffee">
+              <div class="projects__scroll scroll">
+                <div class="ico animated">
+
+                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
+                    style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <defs>
+                      <clipPath id="cut-off-arrow">
+                        <circle cx="306" cy="306" r="287" />
+                      </clipPath>
+
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                          result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                      </filter>
+
+                    </defs>
+                    <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
+                  </svg>
                 </div>
-                <ul class="tumblr">
-                  <li class="tumblr__button one swiper-button-prev"></li>
-                  <li class="tumblr__button two swiper-button-next"></li>
-                </ul>
               </div>
+              <div class="projects__item">
+                <div class="projects__header">
+                  <h3>Coffee</h3>
+                  <div class="projects__controls">
+                    <a class="projects__control projects__control--code" href="https://github.com/msdubova/Drink2Go"
+                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">The
+                      Brief</a>
+                    <a class="projects__control projects__control--preview" href="https://msdubova.github.io/Coffee/"
+                      target="_blank">preview</a>
+                  </div>
 
-            </div>
-          </div> -->
+                </div>
+                <picture>
 
-          <!-- <a class="button"></a> -->
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/coffee-mobile-2x.webp 2x, ./img/coffee-mobile-1x.webp 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/coffee-tablet-2x.webp 2x, ./img/coffee-tablet-1x.webp 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <source type="image/webp" srcset="./img/coffee-2x.webp 2x, ./img/coffee-1x.webp 1x">
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source media="(max-width: 767px)"
+                    srcset="./img/coffee-mobile-2x.png 2x, ./img/coffee-mobile-1x.png 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/coffee-tablet-2x.png 2x, ./img/coffee-tablet-1x.png 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <img loading="lazy" width="555" height="350" srcset=".img/coffee-2x.png 2x" src="./img/coffee-1x.png"
+                    alt="Coffee-project preview">
+                </picture>
+              </div>
+              <ul class="projects__stack">
+
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#queries">
+                </svg>
+              </li> -->
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#html5">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#css3">
+                  </svg>
+                </li>
+
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#sass">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#npm">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#gulp">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#github">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#node-js">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#js">
+                  </svg>
+                </li>
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#a11y">
+                </svg>
+              </li> -->
 
 
 
-          <!-- <div class="monitor">
-          <div class="monitor__block swiper slider">
-            <div class="swiper-wrapper  ">
-
-              <div class="slider__item projects__item projects__item--smart swiper-slide">Smart</div>
-              <div class="slider__item projects__item projects__item--antarctica swiper-slide">ANtarctica</div>
-              <div class="slider__item projects__item projects__item--coffee swiper-slide">Coffee</div>
-              <div class="slider__item projects__item projects__item--device swiper-slide">Device</div>
-              <div class="slider__item projects__item projects__item--toys swiper-slide">Toys</div>
-              <div class="slider__item projects__item projects__item--supergym swiper-slide">SuperGym</div>
-
-            </div>
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-          </div>
-        </div> -->
-          <!-- <div class="catalog">
-          <ul>
-            <li><h3>SuperGym</h3></li>
-
-
+              </ul>
             </li>
-            <li><h3>SMART</h3></li>
+            <li class="projects__block" id="device">
+              <div class="projects__scroll scroll">
+                <div class="ico animated">
+                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
+                    style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <defs>
+                      <clipPath id="cut-off-arrow">
+                        <circle cx="306" cy="306" r="287" />
+                      </clipPath>
+
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                          result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                      </filter>
+
+                    </defs>
+                    <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="projects__item">
+                <div class="projects__header">
+                  <h3>Device</h3>
+                  <div class="projects__controls">
+                    <a class="projects__control projects__control--code"
+                      href="https://github.com/msdubova/844063-device-24" target="_blank"> &#60;/&#62;</a> <a
+                      class="projects__control projects__control--brief">The Brief</a>
+                    <a class="projects__control projects__control--preview"
+                      href="https://msdubova.github.io/844063-device-24/" target="_blank">preview</a>
+                  </div>
+
+                </div>
+                <picture>
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/device-mobile-2x.webp 2x, ./img/device-mobile-1x.webp 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/device-tablet-2x.webp 2x, ./img/device-tablet-1x.webp 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <source type="image/webp" srcset="./img/device-2x.webp 2x, ./img/device-1x.webp 1x">
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source media="(max-width: 767px)"
+                    srcset="./img/device-mobile-2x.png 2x, ./img/device-mobile-1x.png 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/device-tablet-2x.png 2x, ./img/device-tablet-1x.png 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <img loading="lazy" width="555" height="350" srcset=".img/device-2x.png 2x" src="./img/device-1x.png"
+                    alt="device-project preview">
+                </picture>
+              </div>
+              <ul class="projects__stack">
+
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#queries">
+                </svg>
+              </li> -->
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#html5">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#css3">
+                  </svg>
+                </li>
+
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#sass">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#npm">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#gulp">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#github">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#node-js">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#js">
+                  </svg>
+                </li>
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#a11y">
+                </svg>
+              </li> -->
+
+
+
+              </ul>
             </li>
-            <li><h3>ANtarctica</h3></li>
+            <li class="projects__block" id="antarctica">
+              <div class="projects__scroll scroll">
+                <div class="ico animated">
+                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
+                    style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <defs>
+                      <clipPath id="cut-off-arrow">
+                        <circle cx="306" cy="306" r="287" />
+                      </clipPath>
+
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                          result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                      </filter>
+
+                    </defs>
+                    <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="projects__item">
+                <div class="projects__header">
+                  <h3>Antarctica</h3>
+                  <div class="projects__controls">
+                    <a class="projects__control projects__control--code" href="https://github.com/msdubova/Antarctica"
+                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">The
+                      Brief</a>
+                    <a class="projects__control projects__control--preview"
+                      href="https://msdubova.github.io/Antarctica/" target="_blank">preview</a>
+                  </div>
+
+                </div>
+                <picture>
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/antarctica-mobile-2x.webp 2x, ./img/antarctica-mobile-1x.webp 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/antarctica-tablet-2x.webp 2x, ./img/antarctica-tablet-1x.webp 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <source type="image/webp" srcset="./img/antarctica-2x.webp 2x, ./img/antarctica-1x.webp 1x">
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source media="(max-width: 767px)"
+                    srcset="./img/antarctica-mobile-2x.png 2x, ./img/antarctica-mobile-1x.png 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/antarctica-tablet-2x.png 2x, ./img/antarctica-tablet-1x.png 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <img loading="lazy" width="555" height="350" srcset=".img/antarctica-2x.png 2x"
+                    src="./img/antarctica-1x.png" alt="antarctica-project preview">
+                </picture>
+              </div>
+              <ul class="projects__stack">
+
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#queries">
+                </svg>
+              </li> -->
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#html5">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#css3">
+                  </svg>
+                </li>
+
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#sass">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#npm">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#gulp">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#github">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#node-js">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#js">
+                  </svg>
+                </li>
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#a11y">
+                </svg>
+              </li> -->
+
+
+
+              </ul>
             </li>
-            <li><h3>Coffee</h3></li>
+            <li class="projects__block" id="supergym">
+              <div class="projects__scroll scroll">
+                <div class="ico animated">
+                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
+                    style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <defs>
+                      <clipPath id="cut-off-arrow">
+                        <circle cx="306" cy="306" r="287" />
+                      </clipPath>
+
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                          result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                      </filter>
+
+                    </defs>
+                    <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="projects__item">
+                <div class="projects__header">
+                  <h3>
+                    SuperGym</h3>
+                  <div class="projects__controls">
+                    <a class="projects__control projects__control--code"
+                      href="https://github.com/msdubova/supergym-HTMLacademy-OlgaDubova" target="_blank">
+                      &#60;/&#62;</a> <a class="projects__control projects__control--brief">The Brief</a>
+                    <a class="projects__control projects__control--preview"
+                      href="https://msdubova.github.io/supergym-HTMLacademy-OlgaDubova/" target="_blank">preview</a>
+                  </div>
+
+                </div>
+                <picture>
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/supergym-mobile-2x.webp 2x, ./img/supergym-mobile-1x.webp 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/supergym-tablet-2x.webp 2x, ./img/supergym-tablet-1x.webp 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <source type="image/webp" srcset="./img/supergym-2x.webp 2x, ./img/supergym-1x.webp 1x">
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source media="(max-width: 767px)"
+                    srcset="./img/supergym-mobile-2x.png 2x, ./img/supergym-mobile-1x.png 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/supergym-tablet-2x.png 2x, ./img/supergym-tablet-1x.png 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <img loading="lazy" width="555" height="350" srcset=".img/supergym-2x.png 2x"
+                    src="./img/supergym-1x.png" alt="supergym-project preview">
+                </picture>
+              </div>
+              <ul class="projects__stack">
+
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#queries">
+                </svg>
+              </li> -->
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#html5">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#css3">
+                  </svg>
+                </li>
+
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#sass">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#npm">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#gulp">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#github">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#node-js">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#js">
+                  </svg>
+                </li>
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#a11y">
+                </svg>
+              </li> -->
+
+
+
+              </ul>
             </li>
-            <li><h3>Device</h3></li>
+            <li class="projects__block" id="smart">
+              <div class="projects__scroll scroll">
+                <div class="ico animated">
+                  <svg class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 612 612"
+                    style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                    <defs>
+                      <clipPath id="cut-off-arrow">
+                        <circle cx="306" cy="306" r="287" />
+                      </clipPath>
+
+                      <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7"
+                          result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                      </filter>
+
+                    </defs>
+                    <path class="st-arrow" d="M317.5,487.6c0.3-0.3,0.4-0.7,0.7-1.1l112.6-112.6c6.3-6.3,6.3-16.5,0-22.7c-6.3-6.3-16.5-6.3-22.7,0
+                    l-86,86V136.1c0-8.9-7.3-16.2-16.2-16.2c-8.9,0-16.2,7.3-16.2,16.2v301.1l-86-86c-6.3-6.3-16.5-6.3-22.7,0
+                    c-6.3,6.3-6.3,16.5,0,22.7l112.7,112.7c0.3,0.3,0.4,0.7,0.7,1c0.5,0.5,1.2,0.5,1.7,0.9c1.7,1.4,3.6,2.3,5.6,2.9
+                    c0.8,0.2,1.5,0.4,2.3,0.4C308.8,492.6,313.8,491.3,317.5,487.6z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="projects__item">
+                <div class="projects__header">
+                  <h3>Smart</h3>
+                  <div class="projects__controls">
+                    <a class="projects__control projects__control--code" href="https://github.com/msdubova/smartdevice"
+                      target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">The
+                      Brief</a>
+                    <a class="projects__control projects__control--preview"
+                      href="https://msdubova.github.io/smartdevice/" target="_blank">preview</a>
+                  </div>
+
+                </div>
+                <picture>
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source type="image/webp" media="(max-width: 767px)"
+                    srcset="./img/smart-mobile-2x.webp 2x, ./img/smart-mobile-1x.webp 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source type="image/webp" media="(max-width: 1199px)"
+                    srcset="./img/smart-tablet-2x.webp 2x, ./img/smart-tablet-1x.webp 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <source type="image/webp" srcset="./img/smart-2x.webp 2x, ./img/smart-1x.webp 1x">
+
+                  <!-- 1x: 290x299; 2x: 580x598 -->
+                  <source media="(max-width: 767px)"
+                    srcset="./img/smart-mobile-2x.png 2x, ./img/smart-mobile-1x.png 1x">
+
+                  <!-- 1x: 670x460; 2x: 1340x920 -->
+                  <source media="(max-width: 1199px)"
+                    srcset="./img/smart-tablet-2x.png 2x, ./img/smart-tablet-1x.png 1x">
+
+                  <!-- 1x: 555x350; 2x: 1110x700 -->
+                  <img loading="lazy" width="555" height="350" srcset=".img/smart-2x.png 2x" src="./img/smart-1x.png"
+                    alt="smart-project preview">
+                </picture>
+              </div>
+              <ul class="projects__stack">
+
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#queries">
+                </svg>
+              </li> -->
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#html5">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#css3">
+                  </svg>
+                </li>
+
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#sass">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#npm">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#gulp">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#github">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#node-js">
+                  </svg>
+                </li>
+                <li>
+                  <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#js">
+                  </svg>
+                </li>
+                <!-- <li>
+                <svg width="35" height="35" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#a11y">
+                </svg>
+              </li> -->
+
+
+
+              </ul>
             </li>
-            <li><h3>Toys</h3></li>
-            </li>
+
+
 
           </ul>
-        </div> -->
-
-
-        </ul>
 
 
 
 
-    </section>
+      </section>
 
-  </main>
+    </main>
 
 
-  <!-- Модалки
+    <!-- Модалки
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -1006,26 +839,30 @@
         </div>
       </div>
     </div> -->
-  <footer class="footer">
-    <ul class="socials">
-      <li>
-        <a href="">
-          <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <use href="img/sprite_auto.svg#letter">
-          </svg>
-          <span>write me</span>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <use href="img/sprite_auto.svg#git">
-          </svg>
-          <span>github</span>
-        </a>
-      </li>
-    </ul>
-  </footer>
+    <footer class="footer">
+      <div class="footer__container container">
+        <ul class="footer__socials socials">
+
+          <li>
+            <a href="">
+              <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite_auto.svg#github">
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite_auto.svg#linkedin">
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </footer>
+  </div>
+
   <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>

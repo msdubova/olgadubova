@@ -1,8 +1,13 @@
 .section {
   display: flex;
-  padding-top: 100px;
+  border: 1px solid red;
+
+  top: 100px;
+  // padding-top: 100px;
 
   &--title {
+    // height: 100vh;
+    padding-top: 100px;
     height: 100vh;
   }
 

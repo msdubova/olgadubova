@@ -30,7 +30,8 @@
 
   &:nth-child(2n) {
     .projects__stack {
-      right: 20px;
+      left: auto;
+      right: 10px;
     }
   }
 
@@ -48,7 +49,7 @@
     }
 
     .projects__stack {
-      transform: translateX(-60px);
+      transform: translateX(-35px);
       transition-duration: 1s;
       z-index: -1;
       opacity: 1;
@@ -60,7 +61,7 @@
 
     &:nth-child(2n) {
       .projects__stack {
-        transform: translateX(60px);
+        transform: translateX(46px);
 
         & svg {
           fill: $color-primary-black;
@@ -112,6 +113,7 @@
   background-color: transparent;
   position: absolute;
   top: -15px;
+  left: -15px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -147,9 +149,9 @@
 }
 
 .projects__controls {
-  width: 30%;
+  width: 50%;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-column-gap: 10px;
 }
 
@@ -177,13 +179,17 @@
   &--preview {
     background-color: $color-hover-yellow;
   }
+
+  &--brief {
+    background-color: $color-hover-blue;
+  }
 }
 
 @include vp-tablet {
   .projects__wrapper {
     grid-template-columns: auto;
     grid-row-gap: 120px;
-    width: 70%;
+    // width: 70%;
     margin: auto;
     margin-bottom: 150px;
   }

@@ -1,6 +1,10 @@
 .socials {
-  flex-shrink: 0;
-  flex-wrap: wrap;
+  @include reset-ul();
+  display: grid;
+  grid-auto-flow: column;
+
+
+
 
   @include vp-mobile {
     li {
@@ -16,7 +20,7 @@
   }
 
   li {
-    margin-left: 11px;
+    text-align: center;
   }
 
   svg {
