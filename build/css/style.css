@@ -1336,8 +1336,233 @@ button,
   }
 }
 
-.menu__block {
+.menu__block *,
+.menu__block *:before,
+.menu__block *:after {
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.menu__block div > div {
+  float: left;
+  padding: 5rem;
+}
+
+.menu__block input {
   display: none;
+}
+
+.menu__block label {
+  display: block;
+  width: 5rem;
+  height: 3.5rem;
+  position: relative;
+}
+
+.menu__block label span {
+  position: relative;
+  top: 1.5rem;
+}
+
+.menu__block label span,
+.menu__block label span:before,
+.menu__block label span:after {
+  display: block;
+  background: #CFD8DC;
+  width: 5rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.menu__block label span:before,
+.menu__block label span:after {
+  content: '';
+  position: absolute;
+}
+
+.menu__block label span:before {
+  bottom: 1.5rem;
+}
+
+.menu__block label span:after {
+  top: 1.5rem;
+}
+
+.left .menu__block label span:before,
+.top .menu__block label span:before,
+.bottom .menu__block label span:before {
+  -webkit-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.left .menu__block label span:after,
+.top .menu__block label span:after,
+.bottom .menu__block label span:after {
+  -webkit-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.right .menu__block label span:before {
+  -webkit-transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
+  right: 0;
+}
+
+.right .menu__block label span:after {
+  -webkit-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
+  right: 0;
+}
+
+.to-arrow :checked ~ .menu__block label span:before,
+.to-arrow :checked ~ .menu__block label span:after {
+  width: 60%;
+}
+
+.to-arrow :checked ~ .menu__block label span:before {
+  bottom: -0.125rem;
+}
+
+.to-arrow :checked ~ .menu__block label span:after {
+  top: -0.125rem;
+}
+
+.left :checked ~ .menu__block label span:before,
+.top :checked ~ .menu__block label span:before,
+.bottom :checked ~ .menu__block label span:before {
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+.left :checked ~ .menu__block label span:after,
+.top :checked ~ .menu__block label span:after,
+.bottom :checked ~ .menu__block label span:after {
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.right :checked ~ .menu__block label span:before {
+  -webkit-transform: rotate(40deg);
+  -ms-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.right :checked ~ .menu__block label span:after {
+  -webkit-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+}
+
+.top :checked ~ .menu__block label span {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.bottom :checked ~ .menu__block label span {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.x :checked ~ .menu__block label span {
+  width: 0;
+}
+
+.x :checked ~ .menu__block label span:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  bottom: 0;
+}
+
+.x :checked ~ .menu__block label span:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.x1 :checked ~ .menu__block label span {
+  background: none;
+}
+
+.x1 :checked ~ .menu__block label span:before {
+  -webkit-animation: x1Before 500ms forwards;
+  animation: x1Before 500ms forwards;
+}
+
+.x1 :checked ~ .menu__block label span:after {
+  -webkit-animation: x1After 500ms forwards;
+  animation: x1After 500ms forwards;
+}
+
+@-webkit-keyframes x1Before {
+  50% {
+    bottom: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    bottom: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes x1Before {
+  50% {
+    bottom: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    bottom: 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes x1After {
+  50% {
+    top: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes x1After {
+  50% {
+    top: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    top: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.menu__button {
+  display: none;
+  z-index: 101;
 }
 
 .nav {
@@ -1626,27 +1851,43 @@ button,
     text-align: center;
   }
 
-  .menu__block {
-    margin: 0;
+  .header {
+    position: relative;
+    width: 100%;
+  }
+
+  .header__container {
     padding: 0;
-    list-style: none;
+  }
+
+  .menu__button {
+    display: block;
+  }
+
+  .menu__block {
     display: none;
   }
 
   .menu__block--active {
-    border-top: 1px solid #808080;
-    position: relative;
-    display: -ms-grid;
-    display: grid;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-top: 30px;
     width: 100%;
     height: 100vh;
     position: absolute;
-    background-color: #ffffff;
+    background: red;
     z-index: 100;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .menu__item {
