@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 let btn = document.querySelector('.menu__button');
 let block = document.querySelector('.menu__block');
-let closeBtn = block.querySelector('.menu__close');
+// let closeBtn = block.querySelector('.menu__close');
 const WIDTH = 770;
 let isOpen = false;
 
@@ -95,9 +95,86 @@ let onClickBtn = (evt) => {
   }
 };
 
-let onCloseBtnClick = () => {
-  closeModal();
-};
+// let onCloseBtnClick = () => {
+//   closeModal();
+// };
 
 btn.addEventListener('click', onClickBtn);
-closeBtn.addEventListener('click', onCloseBtnClick);
+// closeBtn.addEventListener('click', onCloseBtnClick);
+
+
+// function shuffleList() {
+//   const list = document.querySelector('.skills');
+//   const items = Array.from(list.children);
+//   items.sort(() => Math.random() - 0.5);
+//   items.forEach(item => {
+//     list.appendChild(item);
+//     item.style.transform = `translateY(${Math.random() * -200}px)`;
+//     item.style.opacity = 0;
+//     setTimeout(() => {
+//       item.style.transform = 'translateY(0)';
+//       item.style.opacity = 1;
+//     }, Math.random() * 1000);
+//   });
+// }
+
+// window.onload = shuffleList;
+
+// let shuffle = document.querySelector('.skills__shuffle');
+
+// shuffle.addEventListener('click', function () {
+//   shuffleList();
+// });
+
+
+function shuffleList() {
+  const list = document.querySelector('.skills');
+  const items = Array.from(list.children);
+  items.sort(() => Math.random() - 0.5);
+  items.forEach(item => {
+  list.appendChild(item);
+  item.style.transform = `translateY(${Math.random() * -200}px)`;
+  item.style.opacity = 0;
+  if (Math.random() < 0.5) {
+  item.classList.add('skills__item--faded');
+  }
+  setTimeout(() => {
+  item.style.transform = 'translateY(0)';
+  item.style.opacity = 1;
+  }, Math.random() * 1000);
+  });
+  }
+
+  window.onload = shuffleList;
+
+  let shuffle = document.querySelector('.skills__shuffle');
+
+  shuffle.addEventListener('click', function () {
+  shuffleList();
+  });
+// function shuffleList() {
+//   const list = document.querySelector('.skills');
+//   const items = Array.from(list.children);
+//   items.sort(() => Math.random() - 0.5);
+//   items.forEach((item, index) => {
+//   list.appendChild(item);
+//   const delay = index * 100;
+//   item.style.transform = translateY(-100%);
+//   item.style.opacity = 0;
+//   setTimeout(() => {
+//   item.style.transform = 'translateY(0)';
+//   item.style.opacity = 1;
+//   }, delay);
+//   });
+//   }
+
+//   window.onload = shuffleList;
+
+
+// const button = document.getElementById('night-mode-button');
+
+// button.addEventListener('click', function () {
+// alert('toggle');
+//   document.body.classList.toggle('night-theme');
+
+// });

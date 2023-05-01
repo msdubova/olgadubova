@@ -149,3 +149,26 @@
     }
 
 }
+
+
+
+@mixin night-theme() {
+  $color-primary: #171717;
+  $color-primary-dark: #1f1f1f;
+  $color-primary-black: #f7f7f7;
+
+  $color-secondary: #282828;
+  $color-secondary-highlight: #1a1a1a;
+  $color-secondary-border: #f7f7f7;
+  $color-secondary-shadow: #5a5a5a;
+  $color-secondary-hover: #2b2b2b;
+
+  $color-faded: #4c4c4c;
+  $color-faded-highligt: #3a3a3a;
+  $color-faded-shadow: #1c1c1c;
+
+  $color-hover-purple: #342a4f;
+  $color-hover-blue: #2a4f5f;
+  $color-hover-green: #3e4f2a;
+  $color-hover-yellow: #4f4c2a;
+}

@@ -1,0 +1,61 @@
+.aboutme {
+  height: 88vh;
+  margin-top: 80px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+
+.aboutme__wrapper {
+  display: grid;
+  width: 100%;
+  padding-top: 40px;
+
+  grid-gap: 20px;
+  grid-template-columns: 1fr 60%;
+
+  .aboutme__p {
+    margin: auto;
+    margin-left: auto;
+  }
+}
+
+
+.aboutme__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@include vp-tablet {
+  .aboutme__wrapper {
+    grid-template-columns: 1fr 45%;
+  }
+}
+
+@include vp-mobile {
+  .aboutme {
+    margin-top: auto;
+    h3 {
+      display: none;
+    }
+  }
+
+  .aboutme__wrapper {
+    grid-auto-flow: row;
+    grid-template-columns: auto;
+    margin-bottom: 100px;
+
+    .aboutme__p {
+
+      display: none;
+      text-align: justify;
+
+      &:first-of-type {
+        display: block;
+      }
+    }
+  }
+}

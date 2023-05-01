@@ -1,0 +1,16 @@
+.toggle {
+  position: absolute;
+  top: 50%;
+
+&:hover {
+  background-color: red;
+  z-index: 10000;
+}
+};
+
+
+
+
+.night-theme {
+  @include night-theme();
+}

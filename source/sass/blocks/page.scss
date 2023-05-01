@@ -36,10 +36,11 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  position: relative;
 }
 
 .page__main {
-height: 100vh;
+  height: 100vh;
   flex: 1 0 auto;
 
 
@@ -79,8 +80,10 @@ height: 100vh;
   .page__body {
     background: $color-secondary;
   }
+
   .page__main {
-height: auto;
+    height: auto;
+
     h1 {
 
       font-size: 2em;
