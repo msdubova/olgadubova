@@ -1,5 +1,4 @@
 .page {
-
   box-sizing: border-box;
   min-width: $vp-mobile;
   height: 100vh;
@@ -21,59 +20,57 @@
 }
 
 .page__body {
-
+  width: 100%;
   height: 100%;
+
   background-color: $color-secondary-highlight;
   background-image: url("../img/svg/background-intro.svg");
   background-repeat: no-repeat;
   background-size: 6000%;
   background-attachment: fixed;
-  width: 100%;
-
 }
 
 .page__wrapper {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   height: 100%;
-  position: relative;
 }
 
 .page__main {
-  height: 100vh;
   flex: 1 0 auto;
+  height: 100vh;
 
 
   h1 {
     margin: 80px 0;
-    font-family: "Press";
+
     font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 100px;
+    font-family: "Press";
     text-align: center;
-
     color: #4b3b3f;
-    text-shadow: 13px 8px 0px $color-secondary-highlight;
-
+    text-shadow: 13px 8px 0 $color-secondary-highlight;
   }
 }
-
 
 
 @include vp-tablet {
   .page__main {
     h1 {
-      overflow: visible;
-      font-size: 39px;
       margin: 40px 0;
+      overflow: visible;
+
+      font-size: 39px;
     }
 
     p {
       margin: auto auto 40px 16%;
     }
   }
-
 }
 
 @include vp-mobile {
@@ -85,18 +82,18 @@
     height: auto;
 
     h1 {
+      overflow: visible;
 
       font-size: 2em;
       line-height: 45px;
       word-wrap: break-word;
-      overflow: visible;
-      text-shadow: 4px 4px 0px $color-secondary-highlight;
+      text-shadow: 4px 4px 0 $color-secondary-highlight;
     }
 
     p {
       margin: 20px auto;
+
       text-align: center;
     }
   }
-
 }

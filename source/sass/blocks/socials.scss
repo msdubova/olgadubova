@@ -1,17 +1,13 @@
 .socials {
-  @include reset-ul();
   display: grid;
+
   grid-auto-flow: column;
+  @include reset-ul();
 
 
 
 
-  @include vp-mobile {
-    li {
-      margin-right: 11px;
-      margin-left: 0;
-    }
-  }
+
 
   ul {
     display: flex;
@@ -27,5 +23,44 @@
     display: inline-block;
 
     vertical-align: middle;
+  }
+}
+
+.socials__item {
+  &--mobileonly {
+    display: none;
+
+    text-align: center;
+  }
+}
+
+@include vp-mobile {
+  .socials__item {
+    margin-right: 11px;
+    margin-left: 0;
+
+    &--mobileonly {
+      display: block;
+      animation: shake 6s infinite;
+      @keyframes shake {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.05 );
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        75% {
+          transform: scale(1.05);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+
+    }
   }
 }

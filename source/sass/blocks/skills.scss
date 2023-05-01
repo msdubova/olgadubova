@@ -20,7 +20,6 @@
   width: fit-content;
   margin-top: 5px;
   margin-left: 5px;
-
   padding: 0.8em;
 
   font-weight: 600;
@@ -81,11 +80,12 @@
   .skills {
     padding-top: 10px;
   }
-.skills__item{
-  padding: 0.5em;
-}
 
-.skills__shuffle {
-  display: none;
-}
+  .skills__item {
+    padding: 0.5em;
+  }
+
+  .skills__shuffle {
+    display: none;
+  }
 }

@@ -18,6 +18,7 @@
 
   .aboutme__p {
     margin: auto;
+    margin-bottom: 15px;
     margin-left: auto;
   }
 }
@@ -38,19 +39,21 @@
 @include vp-mobile {
   .aboutme {
     margin-top: auto;
+
     h3 {
       display: none;
     }
   }
 
   .aboutme__wrapper {
-    grid-auto-flow: row;
-    grid-template-columns: auto;
     margin-bottom: 100px;
 
-    .aboutme__p {
+    grid-auto-flow: row;
+    grid-template-columns: auto;
 
+    .aboutme__p {
       display: none;
+
       text-align: justify;
 
       &:first-of-type {
