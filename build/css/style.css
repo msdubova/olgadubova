@@ -1336,233 +1336,16 @@ button,
   }
 }
 
-.menu__block *,
-.menu__block *:before,
-.menu__block *:after {
-  -webkit-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
-  transition: all 300ms ease;
-}
-
-.menu__block div > div {
-  float: left;
-  padding: 5rem;
-}
-
-.menu__block input {
-  display: none;
-}
-
-.menu__block label {
-  display: block;
-  width: 5rem;
-  height: 3.5rem;
-  position: relative;
-}
-
-.menu__block label span {
-  position: relative;
-  top: 1.5rem;
-}
-
-.menu__block label span,
-.menu__block label span:before,
-.menu__block label span:after {
-  display: block;
-  background: #CFD8DC;
-  width: 5rem;
-  height: 0.5rem;
-  border-radius: 0.25rem;
-}
-
-.menu__block label span:before,
-.menu__block label span:after {
-  content: '';
-  position: absolute;
-}
-
-.menu__block label span:before {
-  bottom: 1.5rem;
-}
-
-.menu__block label span:after {
-  top: 1.5rem;
-}
-
-.left .menu__block label span:before,
-.top .menu__block label span:before,
-.bottom .menu__block label span:before {
-  -webkit-transform-origin: top left;
-  -ms-transform-origin: top left;
-  transform-origin: top left;
-}
-
-.left .menu__block label span:after,
-.top .menu__block label span:after,
-.bottom .menu__block label span:after {
-  -webkit-transform-origin: bottom left;
-  -ms-transform-origin: bottom left;
-  transform-origin: bottom left;
-}
-
-.right .menu__block label span:before {
-  -webkit-transform-origin: top right;
-  -ms-transform-origin: top right;
-  transform-origin: top right;
-  right: 0;
-}
-
-.right .menu__block label span:after {
-  -webkit-transform-origin: bottom right;
-  -ms-transform-origin: bottom right;
-  transform-origin: bottom right;
-  right: 0;
-}
-
-.to-arrow :checked ~ .menu__block label span:before,
-.to-arrow :checked ~ .menu__block label span:after {
-  width: 60%;
-}
-
-.to-arrow :checked ~ .menu__block label span:before {
-  bottom: -0.125rem;
-}
-
-.to-arrow :checked ~ .menu__block label span:after {
-  top: -0.125rem;
-}
-
-.left :checked ~ .menu__block label span:before,
-.top :checked ~ .menu__block label span:before,
-.bottom :checked ~ .menu__block label span:before {
-  -webkit-transform: rotate(-40deg);
-  -ms-transform: rotate(-40deg);
-  transform: rotate(-40deg);
-}
-
-.left :checked ~ .menu__block label span:after,
-.top :checked ~ .menu__block label span:after,
-.bottom :checked ~ .menu__block label span:after {
-  -webkit-transform: rotate(40deg);
-  -ms-transform: rotate(40deg);
-  transform: rotate(40deg);
-}
-
-.right :checked ~ .menu__block label span:before {
-  -webkit-transform: rotate(40deg);
-  -ms-transform: rotate(40deg);
-  transform: rotate(40deg);
-}
-
-.right :checked ~ .menu__block label span:after {
-  -webkit-transform: rotate(-40deg);
-  -ms-transform: rotate(-40deg);
-  transform: rotate(-40deg);
-}
-
-.top :checked ~ .menu__block label span {
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-
-.bottom :checked ~ .menu__block label span {
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
-}
-
-.x :checked ~ .menu__block label span {
-  width: 0;
-}
-
-.x :checked ~ .menu__block label span:before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  bottom: 0;
-}
-
-.x :checked ~ .menu__block label span:after {
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 0;
-}
-
-.x1 :checked ~ .menu__block label span {
-  background: none;
-}
-
-.x1 :checked ~ .menu__block label span:before {
-  -webkit-animation: x1Before 500ms forwards;
-  animation: x1Before 500ms forwards;
-}
-
-.x1 :checked ~ .menu__block label span:after {
-  -webkit-animation: x1After 500ms forwards;
-  animation: x1After 500ms forwards;
-}
-
-@-webkit-keyframes x1Before {
-  50% {
-    bottom: 0;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    bottom: 0;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-}
-
-@keyframes x1Before {
-  50% {
-    bottom: 0;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    bottom: 0;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-}
-
-@-webkit-keyframes x1After {
-  50% {
-    top: 0;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    top: 0;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-}
-
-@keyframes x1After {
-  50% {
-    top: 0;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    top: 0;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-}
-
 .menu__button {
   display: none;
   z-index: 101;
+}
+
+.menu__button span::before,
+.menu__button span::after {
+  -webkit-transition: background-color 0.3s ease-out 0.3s;
+  -o-transition: background-color 0.3s ease-out 0.3s;
+  transition: background-color 0.3s ease-out 0.3s;
 }
 
 .nav {
@@ -1860,7 +1643,38 @@ button,
     padding: 0;
   }
 
-  .menu__button {
+  .header__nav a span {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  .header__nav a:hover svg {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .header__nav a:hover span {
+    position: relative;
+  }
+
+  .header__nav svg {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+  }
+
+  .header__nav span {
     display: block;
   }
 
@@ -1876,7 +1690,7 @@ button,
     width: 100%;
     height: 100vh;
     position: absolute;
-    background: red;
+    background: #fff0f0;
     z-index: 100;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -1890,28 +1704,95 @@ button,
     flex-direction: column;
   }
 
-  .menu__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+  .menu__button {
+    display: block;
+    background: transparent;
+    position: relative;
+    width: 96px;
+    height: 96px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
   }
 
-  .menu__close {
-    position: absolute;
-    width: 30px;
-    height: 30px;
+  .menu__button span {
+    border-radius: 5px;
     display: block;
-    background-image: url("../img/sprite/letter.svg");
-    background-color: aqua;
-    top: 5px;
-    left: calc(50% - 15px);
-    z-index: 1000;
+    height: 8px;
+    background: #fff0f0;
+    position: relative;
+  }
+
+  .menu__button span::before,
+  .menu__button span::after {
+    position: absolute;
+    border-radius: 5px;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: #fff0f0;
+    content: "";
+  }
+
+  .menu__button span::before {
+    top: -28px;
+  }
+
+  .menu__button span::after {
+    bottom: -28px;
+  }
+
+  .menu__button span {
+    -webkit-transition-delay: 0.3;
+    -o-transition-delay: 0.3;
+    transition-delay: 0.3;
+  }
+
+  /* when menu open: */
+
+  .menu__button--opened span {
+    background: none;
+    -webkit-transition: 0;
+    -o-transition: 0;
+    transition: 0;
+  }
+
+  .menu__button span::before,
+  .menu__button span::after {
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    -o-transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  }
+
+  .menu__button--opened span::before,
+  .menu__button--opened span::after {
+    background-color: #b18597;
+    -webkit-transform-origin: right;
+    -ms-transform-origin: right;
+    transform-origin: right;
+    -webkit-transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+    -o-transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  }
+
+  .menu__button--opened span::before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .menu__button--opened span::after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   .nav {

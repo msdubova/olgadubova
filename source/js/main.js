@@ -72,11 +72,13 @@ let isOpen = false;
 
 let openModal = () => {
   block.classList.add('menu__block--active');
+  btn.classList.add('menu__button--opened');
   isOpen = true;
 };
 
 let closeModal = () => {
   block.classList.remove('menu__block--active');
+  btn.classList.remove('menu__button--opened');
   isOpen = false;
 };
 

@@ -53,4 +53,33 @@
     padding: 0;
   }
 
+  .header__nav {
+    a {
+      span {
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 50px;
+      }
+    }
+    a:hover {
+      svg {
+        transform: none;
+      }
+
+      span {
+        position: relative;
+
+      }
+
+    }
+
+    svg {
+      @include visually-hidden();
+    }
+
+    span {
+      display: block;
+    }
+  }
 }
