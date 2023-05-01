@@ -32,9 +32,10 @@
     cursor: pointer;
 
     span {
+      transition-delay: 0.3;
       border-radius: 5px;
       display: block;
-      height: 8px;
+      // height: 8px;
       background: $color-secondary-highlight;
       position: relative;
 
@@ -43,28 +44,36 @@
         position: absolute;
         border-radius: 5px;
         display: block;
-        left: 0;
-        width: 100%;
-        height: 8px;
+        // left: 0;
+        // width: 100%;
+        // height: 8px;
         background-color: $color-secondary-highlight;
         content: "";
       }
 
       &::before {
-        top: -28px;
+        // top: -28px;
       }
 
       &::after {
-        bottom: -28px;
+        // bottom: -28px;
       }
     }
   }
 
-  .menu__button {
-    span {
+  .menu__button span,
+  .menu__button span::before,
+  .menu__button span::after {
+    width: 15vw; // ширина
+    height: 1.6vw; // высота
+  }
 
-      transition-delay: 0.3;
-    }
+  .menu__button span::before {
+    top: -5vw; // отступ сверху
+  }
+
+  .menu__button span::after {
+    bottom: -5vw; // отступ снизу
   }
 
   /* when menu open: */
@@ -92,11 +101,11 @@
   }
 
   .menu__button--opened span::before {
-    transform: rotate(-45deg);
+    transform: rotate(-43deg);
   }
 
   .menu__button--opened span::after {
-    transform: rotate(45deg);
+    transform: rotate(43deg);
   }
 }
 
