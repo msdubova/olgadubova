@@ -45,7 +45,10 @@
 
 @include vp-mobile {
   .header {
-    position: relative;
+    z-index: 1000000;
+    position: sticky;
+    top: 0;
+    background-color: $color-secondary;
     width: 100%;
   }
 
@@ -56,12 +59,13 @@
   .header__nav {
     a {
       span {
-         text-transform: uppercase;
-         font-weight: 700;
-         font-size: 20px;
-         line-height: 50px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 50px;
       }
     }
+
     a:hover {
       svg {
         transform: none;

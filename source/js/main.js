@@ -73,12 +73,14 @@ let isOpen = false;
 let openModal = () => {
   block.classList.add('menu__block--active');
   btn.classList.add('menu__button--opened');
+  document.body.classList.add('modal-open'); // добавляем класс для запрещения скролла страницы
   isOpen = true;
 };
 
 let closeModal = () => {
   block.classList.remove('menu__block--active');
   btn.classList.remove('menu__button--opened');
+  document.body.classList.remove('modal-open'); // удаляем класс для разрешения скролла страницы
   isOpen = false;
 };
 
@@ -99,4 +101,3 @@ let onCloseBtnClick = () => {
 
 btn.addEventListener('click', onClickBtn);
 closeBtn.addEventListener('click', onCloseBtnClick);
-

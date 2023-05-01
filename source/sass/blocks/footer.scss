@@ -1,8 +1,9 @@
 .footer {
   position: fixed;
+  right: 0;
+
   flex: 0 0 auto;
   width: 40%;
-  right: 0;
 }
 
 
@@ -19,6 +20,7 @@
   a:hover {
     svg {
       transform: scale(1.5);
+
       transition: 0.5s ease;
     }
   }
@@ -45,8 +47,12 @@
 
 @include vp-mobile {
   .footer {
-    position: relative;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+
     width: 100%;
+
     background-color: $color-secondary-highlight;
     border-top: 1px solid $color-secondary-shadow;
   }
@@ -62,6 +68,7 @@
     max-width: 400px;
 
     svg {
-    fill: $color-secondary-border;}
+      fill: $color-secondary-border;
+    }
   }
 }

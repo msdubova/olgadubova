@@ -4,6 +4,9 @@
 }
 
 @include vp-mobile {
+  .menu {
+    position: sticky;
+  }
   .menu__block {
     display: none;
 
