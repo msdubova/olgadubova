@@ -1,5 +1,6 @@
 .header {
   position: fixed;
+
   width: 40%;
   margin-right: auto;
 }
@@ -11,30 +12,30 @@
 }
 
 .header__nav {
-  @include reset-ul();
- width: 50%;
   display: grid;
+  width: 50%;
+
   grid-auto-flow: column;
+  @include reset-ul();
 
   span {
     display: none;
 
-
     text-align: center;
-
   }
 
   a:hover {
     span {
-      display: block;
       position: absolute;
+
+      display: block;
     }
 
     svg {
       transform: scale(1.2);
+
       transition: 0.5s ease;
     }
-
   }
 }
 
@@ -65,15 +66,16 @@
 
 @include vp-mobile {
   .header {
-    z-index: 1000000;
     position: sticky;
     top: 0;
-    background-color: $color-secondary;
+    z-index: 1000000;
+
     width: 100%;
+
+    background-color: $color-secondary;
   }
 
   .header__container {
-    // padding: 0;
     justify-content: space-between;
     align-items: center;
   }
@@ -81,10 +83,10 @@
   .header__nav {
     a {
       span {
-        text-transform: uppercase;
         font-weight: 700;
         font-size: 20px;
         line-height: 50px;
+        text-transform: uppercase;
       }
     }
 
@@ -95,9 +97,7 @@
 
       span {
         position: relative;
-
       }
-
     }
 
     svg {

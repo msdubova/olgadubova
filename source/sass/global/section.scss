@@ -2,45 +2,42 @@
   display: flex;
 
   &--title {
-    // height: 100vh;
-    padding-top: 100px;
     height: 100vh;
+    padding-top: 100px;
   }
-
 }
 
 .section__container {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   height: fit-content;
 
-  position: relative;
-
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: right 200%;
+  background-size: contain;
 
 
   p {
-
     max-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-left: 15%;
+
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 25px;
     letter-spacing: 1px;
-
-    margin: auto;
-    margin-left: 15%;
-    margin-bottom: 50px;
   }
-
 }
 
 @include vp-tablet {
-  .section {}
+  .section {
+  }
 }
 
 
@@ -50,7 +47,7 @@
   }
 
   .section--title {
-    padding-top: 100px;
     height: auto;
+    padding-top: 100px;
   }
 }

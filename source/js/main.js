@@ -51,14 +51,25 @@ const WIDTH = 770;
 let isOpen = false;
 
 let openModal = () => {
-  block.classList.add('menu__block--active');
+
   btn.classList.add('menu__button--opened');
   document.body.classList.add('modal-open');
   isOpen = true;
+
+  if (localStorage.getItem('theme') === 'dark') {
+    block.classList.add('menu__block--active-night');
+  } else {
+     block.classList.add('menu__block--active');
+  }
 };
 
 let closeModal = () => {
-  block.classList.remove('menu__block--active');
+  if (localStorage.getItem('theme') === 'dark') {
+    block.classList.remove('menu__block--active-night');
+  } else {
+     block.classList.remove('menu__block--active');
+  }
+
   btn.classList.remove('menu__button--opened');
   document.body.classList.remove('modal-open');
   isOpen = false;
@@ -118,15 +129,16 @@ function shuffleList() {
     list.appendChild(item);
     item.style.transform = `translateY(${Math.random() * -200}px)`;
     item.style.opacity = 0;
-    if (Math.random() < 0.5) {
-      item.classList.add('skills__item--faded');
-    }
+    // if (Math.random() < 0.5) {
+    //   item.classList.add('skills__item--faded');
+    // }
     setTimeout(() => {
       item.style.transform = 'translateY(0)';
       item.style.opacity = 1;
     }, Math.random() * 1000);
   });
 }
+
 function setSwitchState() {
   const switchInput = document.querySelector('.toggle-switch');
   const theme = localStorage.getItem('theme');

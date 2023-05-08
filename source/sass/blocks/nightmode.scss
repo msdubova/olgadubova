@@ -1,14 +1,9 @@
-
-
 .switch {
-
-  // position: absolute;
   position: relative;
-  overflow: hidden;
+
   width: 6rem;
   height: 3rem;
-
-// left:20rem;
+  overflow: hidden;
 }
 
 .switch input {
@@ -16,6 +11,7 @@
   top: 0;
   left: 0;
   z-index: 2;
+
   opacity: 0;
 }
 
@@ -24,38 +20,31 @@
 }
 
 .background {
-  z-index: 1;
   position: absolute;
+  z-index: 1;
+
   width: 6rem;
   height: 3rem;
-  border-radius: 2.5rem;
-  border: 2px solid $color-secondary-shadow;
-  background: linear-gradient(to right, $color-day-secondary-border 0%, $color-day-secondary-shadow 100%);
+
+  background: linear-gradient(to right, $color-secondary-border 0%, $color-secondary-shadow 100%);
   background: $color-secondary;
+  border: 2px solid $color-secondary-shadow;
+  border-radius: 2.5rem;
+
   transition: all 0.3s;
 }
 
-/* .fill {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 2rem;
-  left: 0;
-  background: #484848;
-  transition: 0.75s all ease;
-}
- */
-/* .switch input:checked ~ .fill {
-  background: #E9F8FD;
-} */
 
 .stars1,
 .stars2 {
   position: absolute;
-  height: 0.4rem;
+
   width: 0.4rem;
-  background:$color-secondary-highlight;
+  height: 0.4rem;
+
+  background: $color-secondary-highlight;
   border-radius: 50%;
+
   transition: 0.3s all ease;
 }
 
@@ -73,13 +62,16 @@
 .stars1:before,
 .stars2:after,
 .stars2:before {
-  position: absolute;
   content: "";
+  position: absolute;
+
   display: block;
-  height: 0.25rem;
   width: 0.25rem;
-  background:$color-day-secondary-highlight;
+  height: 0.25rem;
+
+  background: $color-secondary-highlight;
   border-radius: 50%;
+
   transition: 0.2s all ease;
 }
 
@@ -104,48 +96,55 @@
 }
 
 .sun-moon {
-  z-index: 2;
   position: absolute;
   left: 0;
-  display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
-  margin: 0.25rem;
-  background: #FFFDF2;
-  border-radius: 50%;
-  transition: all 0.5s ease;
+  z-index: 2;
 
-  /* Default to Moon */
-  border:2px solid $color-secondary-shadow;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 0.25rem;
+
+  background: #fffdf2;
+  border: 2px solid $color-secondary-shadow;
+  border-radius: 50%;
+
+  transition: all 0.5s ease;
 }
 
 .sun-moon .dots {
   position: absolute;
   top: 9px;
   left: 20px;
-  height: 1rem;
+
   width: 1rem;
-  background: #EFEEDB;
-  border: 2px solid #DEE2C6;
+  height: 1rem;
+
+  background: #efeedb;
+  border: 2px solid #dee2c6;
   border-radius: 50%;
+
   transition: 0.4s all ease;
 }
 
 .sun-moon .dots:after,
 .sun-moon .dots:before {
-  position: absolute;
   content: "";
+  position: absolute;
+
   display: block;
-  height: 0.25rem;
   width: 0.25rem;
-  background: #EFEEDB;
-  border: 2px solid #DEE2C6;
+  height: 0.25rem;
+
+  background: #efeedb;
+  border: 2px solid #dee2c6;
   border-radius: 50%;
+
   transition: 0.4s all ease;
 }
 
 .sun-moon .dots:after {
-  top: 0px;
+  top: 0;
   left: -20px;
 }
 
@@ -154,176 +153,60 @@
   left: -10px;
 }
 
-/* Transition to Sun */
 
-.switch input:checked~.sun-moon {
+
+.switch input:checked ~ .sun-moon {
   left: calc(100% - 3rem);
+
   background: #ffd972;
-  border-color: #E7C65C;
+  border-color: #e7c65c;
   transform: rotate(-25deg);
 }
 
-.switch input:checked~.sun-moon .dots,
-.switch input:checked~.sun-moon .dots:after,
-.switch input:checked~.sun-moon .dots:before {
-  background: #FFFFFF;
-  border-color: #FFFFFF;
+.switch input:checked ~ .sun-moon .dots,
+.switch input:checked ~ .sun-moon .dots:after,
+.switch input:checked ~ .sun-moon .dots:before {
+  background: #ffffff;
+  border-color: #ffffff;
 }
 
-.switch input:checked~.sun-moon .dots {
-  height: 1.5rem;
-  width: 1.5rem;
-  top: 0px;
+.switch input:checked ~ .sun-moon .dots {
+  top: 0;
   left: -20px;
+
+  width: 1.5rem;
+  height: 1.5rem;
+
   transform: rotate(25deg);
 }
 
-.switch input:checked~.sun-moon .dots:after {
-  height: 0.65rem;
-  width: 0.65rem;
+.switch input:checked ~ .sun-moon .dots:after {
   top: 2px;
   left: -12px;
+
+  width: 0.65rem;
+  height: 0.65rem;
 }
 
-.switch input:checked~.sun-moon .dots:before {
-  height: 0.4rem;
-  width: 0.4rem;
+.switch input:checked ~ .sun-moon .dots:before {
   top: 6px;
   left: 14px;
+
+  width: 0.4rem;
+  height: 0.4rem;
 }
 
-.switch input:checked~.background .stars1,
-.switch input:checked~.background .stars2 {
-  opacity: 0;
+.switch input:checked ~ .background .stars1,
+.switch input:checked ~ .background .stars2 {
   transform: translateY(2rem);
+  opacity: 0;
 }
 
-.switch input:checked~.background {
-  border: 2px solid #78C1D5;
-  background: linear-gradient(to right, #78C1D5 0%, #BBE7F5 100%);
+.switch input:checked ~ .background {
+  background: linear-gradient(to right, #78c1d5 0%, #bbe7f5 100%);
+  border: 2px solid #78c1d5;
 }
 
 
-// .switch {
-//   position: absolute;
-//   overflow: hidden;
-//   width: 3.75rem;
-//   height: 2rem;
-// }
-
-// .switch input {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: 2;
-//   opacity: 0;
-// }
-
-// .switch label {
-//   cursor: pointer;
-// }
-
-// .background {
-//   z-index: 1;
-//   position: absolute;
-//   width: 3.75rem;
-//   height: 2rem;
-//   border-radius: 1.25rem;
-//   border: 0.125rem solid $color-secondary-shadow;
-//   background: linear-gradient(to right, $color-day-secondary-border 0%, $color-day-secondary-shadow 100%);
-//   background: $color-secondary;
-//   transition: all 0.3s;
-// }
-
-// .stars1,
-// .stars2 {
-//   position: absolute;
-//   height: 0.2rem;
-//   width: 0.2rem;
-//   background:$color-secondary-highlight;
-//   border-radius: 50%;
-//   transition: 0.3s all ease;
-// }
-
-// .stars1 {
-//   top: 3px;
-//   right: 11.5px;
-// }
-
-// .stars2 {
-//   top: 20px;
-//   right: 24px;
-// }
-
-// .stars1:after,
-// .stars1:before,
-// .stars2:after,
-// .stars2:before {
-//   position: absolute;
-//   content: "";
-//   display: block;
-//   height: 0.125rem;
-//   width: 0.125rem;
-//   background:$color-day-secondary-highlight;
-//   border-radius: 50%;
-//   transition: 0.2s all ease;
-// }
-
-// .stars1:after {
-//   top: 4px;
-//   right: 10px;
-// }
-
-// .stars1:before {
-//   top: 9px;
-//   right: -6px;
-// }
-
-// .stars2:after {
-//   top: -4px;
-//   right: -8px;
-// }
-
-// .stars2:before {
-//   top: 3px;
-//   right: -13px;
-// }
-
-// .sun-moon {
-//   z-index: 2;
-//   position: absolute;
-//   left: 0;
-//   display: inline-block;
-//   height: 1.5rem;
-//   width: 1.5rem;
-//   margin: 0.25rem;
-//   background: #FFFDF2;
-//   border-radius: 50%;
-//   transition: all 0.5s ease;
-//   /* Default to Moon */
-//   border: 0.125rem solid $color-secondary-shadow;
-// }
-
-// .sun-moon .dots {
-//   position: absolute;
-//   top: 4.5px;
-//   left: 13.5px;
-//   height: 0.5rem;
-//   width: 0.5rem;
-//   background: #EFEEDB;
-//   border: 0.125rem solid #DEE2C6;
-//   border-radius: 50%;
-//   transition: 0.4s all ease;
-// }
-
-// .sun-moon .dots:after,
-// .sun-moon .dots:before {
-//   position: absolute;
-//   content: "";
-//   display: block;
-//   height: 0.0625rem;
-//   width: 0.0625rem;
-//   background: #EFEEDB;
-//   border: 0.125rem solid #DEE2C6;
-//   border-radius: 50%;
-//   transition: 0.4s all
+@include vp-mobile {
+}

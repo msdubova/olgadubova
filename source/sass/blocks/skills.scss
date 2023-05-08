@@ -23,7 +23,6 @@
   padding: 0.8em;
 
   font-weight: 600;
-
   text-transform: uppercase;
 
   border: 2px solid #b18597;
@@ -37,9 +36,9 @@
           transition:         transform 0.15s;
           transition:         transform 0.15s, -webkit-transform 0.15s;
 
-  &:hover {
-    background-color: $color-secondary;
-  }
+  // &:hover {
+  //  @include neon();
+  // }
 
   &--faded {
     background: $color-secondary-highlight;
@@ -59,25 +58,6 @@
   text-transform: uppercase;
 
   cursor: pointer;
-
-  // animation: shine 4s ease-in-out infinite;
-
-  // @keyframes shine {
-  //   0% {
-  //     text-shadow: 0 0 10px $color-secondary-highlight, 0 0 20px $color-secondary-highlight, 0 0 30px $color-secondary-highlight, 0 0 40px $color-secondary-highlight, 0 0 70px $color-secondary-highlight, 0 0 80px $color-secondary-highlight, 0 0 100px $color-secondary-highlight, 0 0 150px $color-secondary-highlight;
-  //   }
-
-  //   50% {
-  //     text-shadow: none;
-
-  //     -webkit-text-stroke: none;
-  //             text-stroke: none;
-  //   }
-
-  //   100% {
-  //     text-shadow: 0 0 10px $color-secondary-highlight, 0 0 20px $color-secondary-highlight, 0 0 30px $color-secondary-highlight, 0 0 40px $color-secondary-highlight, 0 0 70px $color-secondary-highlight, 0 0 80px $color-secondary-highlight, 0 0 100px $color-secondary-highlight, 0 0 150px $color-secondary-highlight;
-  //   }
-  // }
 }
 
 @include vp-tablet {

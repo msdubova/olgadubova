@@ -131,7 +131,7 @@
 }
 
 @mixin neon {
-  color: $color-default-white;
+  color: inherit;
   text-shadow:
     0 0 5px  $color-secondary,
     0 0 10px $color-secondary,
