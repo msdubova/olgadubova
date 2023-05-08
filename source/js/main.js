@@ -127,9 +127,6 @@ function shuffleList() {
     }, Math.random() * 1000);
   });
 }
-
-checkFunction(document.querySelector('.toggle-switch'), setColorMode());
-checkFunction(document.querySelector('.skills__shuffle'), shuffleList);
 function setSwitchState() {
   const switchInput = document.querySelector('.toggle-switch');
   const theme = localStorage.getItem('theme');
@@ -140,9 +137,8 @@ function setSwitchState() {
     switchInput.checked = false;
   }
 }
+checkFunction(document.querySelector('.toggle-switch'), setColorMode());
+checkFunction(document.querySelector('.skills__shuffle'), shuffleList);
+
 
 checkFunction(document.querySelector('.toggle-switch'), setSwitchState());
-
-
-
-

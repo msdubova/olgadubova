@@ -9,11 +9,11 @@
 
 
 
-  ul {
-    display: flex;
+  // ul {
+  //   display: flex;
 
-    @include reset-ul;
-  }
+  //   @include reset-ul;
+  // }
 
   li {
     text-align: center;
@@ -36,31 +36,14 @@
 
 @include vp-mobile {
   .socials__item {
-    margin-right: 11px;
+    margin-right: 0;
     margin-left: 0;
 
     &--mobileonly {
       display: block;
-      animation: shake 6s infinite;
-      @keyframes shake {
-        0% {
-          transform: scale(1);
-        }
-        25% {
-          transform: scale(1.05 );
-        }
-        50% {
-          transform: scale(1.1);
-        }
-        75% {
-          transform: scale(1.05);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
 
 
     }
+
   }
 }

@@ -44,6 +44,10 @@
   &--faded {
     background: $color-secondary-highlight;
   }
+
+  &--faded-night {
+    background: $color-primary;
+  }
 }
 
 .skills__shuffle {
@@ -56,24 +60,24 @@
 
   cursor: pointer;
 
-  animation: shine 4s ease-in-out infinite;
+  // animation: shine 4s ease-in-out infinite;
 
-  @keyframes shine {
-    0% {
-      text-shadow: 0 0 10px $color-secondary-highlight, 0 0 20px $color-secondary-highlight, 0 0 30px $color-secondary-highlight, 0 0 40px $color-secondary-highlight, 0 0 70px $color-secondary-highlight, 0 0 80px $color-secondary-highlight, 0 0 100px $color-secondary-highlight, 0 0 150px $color-secondary-highlight;
-    }
+  // @keyframes shine {
+  //   0% {
+  //     text-shadow: 0 0 10px $color-secondary-highlight, 0 0 20px $color-secondary-highlight, 0 0 30px $color-secondary-highlight, 0 0 40px $color-secondary-highlight, 0 0 70px $color-secondary-highlight, 0 0 80px $color-secondary-highlight, 0 0 100px $color-secondary-highlight, 0 0 150px $color-secondary-highlight;
+  //   }
 
-    50% {
-      text-shadow: none;
+  //   50% {
+  //     text-shadow: none;
 
-      -webkit-text-stroke: none;
-              text-stroke: none;
-    }
+  //     -webkit-text-stroke: none;
+  //             text-stroke: none;
+  //   }
 
-    100% {
-      text-shadow: 0 0 10px $color-secondary-highlight, 0 0 20px $color-secondary-highlight, 0 0 30px $color-secondary-highlight, 0 0 40px $color-secondary-highlight, 0 0 70px $color-secondary-highlight, 0 0 80px $color-secondary-highlight, 0 0 100px $color-secondary-highlight, 0 0 150px $color-secondary-highlight;
-    }
-  }
+  //   100% {
+  //     text-shadow: 0 0 10px $color-secondary-highlight, 0 0 20px $color-secondary-highlight, 0 0 30px $color-secondary-highlight, 0 0 40px $color-secondary-highlight, 0 0 70px $color-secondary-highlight, 0 0 80px $color-secondary-highlight, 0 0 100px $color-secondary-highlight, 0 0 150px $color-secondary-highlight;
+  //   }
+  // }
 }
 
 @include vp-tablet {

@@ -45,10 +45,11 @@
     }
 
     .page__button {
-      color: $color-secondary-highlight;
       font-weight: 400;
-      border: 2px solid $color-primary-black;
+      color: $color-secondary-highlight;
+
       background-color: $color-primary-highlight;
+      border: 2px solid $color-primary-black;
 
       &::before {
         background: $color-primary-dark;
@@ -58,23 +59,35 @@
       &:hover {
         background: $color-primary-highlight;
         transform: translate(0, 0.25em);
+        border-color: $color-primary-black;
 
         &::before {
-          box-shadow: 0 0 0 2px $color-secondary-shadow, 0 0.5em 0 0 $color-secondary-highlight;
+          box-shadow: 0 0 0 2px $color-primary-black;
           transform: translate3d(0, 0.5em, -1em);
+          border-color: $color-primary-black;
         }
       }
 
       &:active {
-        background: $color-secondary-hover;
+        background: $color-primary;
         transform: translate(0em, 0.75em);
 
         &::before {
-          box-shadow: 0 0 0 2px $color-secondary-shadow, 0 0 $color-secondary-highlight;
+
           transform: translate3d(0, 0, -1em);
         }
       }
     }
+
+    .page__link {
+      color: $color-day-secondary-highlight;
+      font-size: 12px;
+    }
+  }
+
+  .page__link {
+
+font-size: 12px;
   }
 }
 
@@ -87,6 +100,8 @@
   background-size: 6000%;
   background-attachment: fixed;
 }
+
+
 
 .page__wrapper {
   position: relative;
@@ -143,7 +158,7 @@
 
     background: $color-secondary;
     border-radius: inherit;
-    box-shadow: 0 0 0 2px $color-secondary-shadow, 0 0.625em 0 0 $color-secondary-highlight;
+
     box-shadow: 0 0 0 2px $color-secondary-shadow;
     transform: translate3d(0, 0.75em, -1em);
 
@@ -155,7 +170,7 @@
     transform: translate(0, 0.25em);
 
     &::before {
-      box-shadow: 0 0 0 2px $color-secondary-shadow, 0 0.5em 0 0 $color-secondary-highlight;
+      box-shadow: 0 0 0 2px $color-secondary-shadow;
       transform: translate3d(0, 0.5em, -1em);
     }
   }
@@ -190,7 +205,26 @@
 }
 
 @include vp-mobile {
+  .page {
+    &--night {
+      .page__header {
+        background-color: $color-primary;
+      }
+
+      .page__heading {
+        color: $color-day-secondary-highlight;
+        text-shadow:3px 3px 0 $color-day-secondary-border;
+      }
+    }
+
+    .page__body {
+
+      background-image: none;
+    }
+  }
+
   .page__body {
+
     background: $color-secondary;
   }
 
