@@ -133,14 +133,14 @@
 @mixin neon {
   color: $color-default-white;
   text-shadow:
-    0 0 5px $color-secondary-highlight,
-    0 0 10px $color-secondary-highlight,
-    0 0 15px $color-secondary-highlight,
-    0 0 25px $color-secondary-highlight,
-    0 0 35px $color-secondary-highlight,
-    0 0 45px $color-secondary-highlight,
-    0 0 55px $color-secondary-highlight,
-    0 0 65px $color-secondary-highlight;
+    0 0 5px  $color-secondary,
+    0 0 10px $color-secondary,
+    0 0 15px $color-secondary,
+    0 0 25px $color-secondary,
+    0 0 35px $color-secondary,
+    0 0 45px $color-secondary,
+    0 0 55px $color-secondary,
+    0 0 65px $color-secondary;
   animation: pink_lights 20s infinite;
 
   @keyframes pink_lights {
@@ -167,23 +167,8 @@
 
 }
 
-@mixin night-theme() {
-  $color-primary: #171717;
-  $color-primary-dark: #1f1f1f;
-  $color-primary-black: #f7f7f7;
-
-  $color-secondary: #282828;
-  $color-secondary-highlight: #1a1a1a;
-  $color-secondary-border: #f7f7f7;
-  $color-secondary-shadow: #5a5a5a;
-  $color-secondary-hover: #2b2b2b;
-
-  $color-faded: #4c4c4c;
-  $color-faded-highligt: #3a3a3a;
-  $color-faded-shadow: #1c1c1c;
-
-  $color-hover-purple: #342a4f;
-  $color-hover-blue: #2a4f5f;
-  $color-hover-green: #3e4f2a;
-  $color-hover-yellow: #4f4c2a;
+.neon {
+  @include neon();
 }
+
+

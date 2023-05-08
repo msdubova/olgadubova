@@ -26,6 +26,8 @@
     background: $color-secondary;
     border-radius: inherit;
     box-shadow: 0 0 0 2px $color-secondary-shadow, 0 0.625em 0 0 $color-secondary-highlight;
+    box-shadow: 0 0 0 2px $color-secondary-shadow;
+
     transform: translate3d(0, 0.75em, -1em);
     transition: transform 0.15s, box-shadow 0.15s;
   }

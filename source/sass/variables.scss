@@ -7,40 +7,110 @@ $color-default-black: #000000;
 $color-default-white: #ffffff;
 $color-transparent: rgba(255, 255, 255, 0);
 
-// Project palette
-// для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
+
+// Project palette для нейминга цветов используем https: //www.htmlcsscolor.com/hex/334482
 
 $color-neon-blue: #2c39f2;
 $color-torch-red: #ff1553;
 $color-neon-pink: #F749F1;
 
 
-$color-primary: #90133a;
-$color-primary-dark: #491928;
-$color-primary-black:#32272a;
+$color-primary: #654A64;
+$color-primary-dark: #452A44;
+$color-primary-black:#2E1B2D;
+$color-primary-highlight: #A587A4;
 
 
-$color-secondary: #f9c4d2;
+
+$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+$color-day-secondary: #f9c4d2;
+$color-day-secondary-highlight: #fff0f0;
+$color-day-secondary-border: #382b22;
+$color-day-secondary-shadow: #b18597;
+$color-day-secondary-hover: #ffe9e9;
+
+$color-day-faded: #dcdcdc;
+$color-day-faded-highligt: #e5e5e5;
+$color-day-faded-shadow: #808080;
+
+$color-day-hover-purple: #d0c4f9;
+$color-day-hover-blue: #c4e7f9;
+$color-day-hover-green: #d2f9c4;
+$color-day-hover-yellow: #f9f6c4;
+
+// Gradient
+
+$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+
+$color-secondary: $color-day-secondary;
+$color-secondary-highlight: $color-day-secondary-highlight;
+$color-secondary-border: $color-day-secondary-border;
+$color-secondary-shadow:$color-day-secondary-shadow;
+$color-secondary-hover: $color-day-secondary-hover;
+
+$color-faded: $color-day-faded;
+$color-faded-highligt: $color-day-faded-highligt;
+$color-faded-shadow:$color-day-faded-shadow;
+
+$color-hover-purple: $color-day-hover-purple;
+$color-hover-blue:$color-day-hover-blue;
+$color-hover-green: $color-day-hover-green;
+$color-hover-yellow: $color-day-hover-yellow;
+// Night-mode colors
+$color-night-primary: #171717;
+$color-night-primary-dark: #1f1f1f;
+$color-night-primary-black: #f7f7f7;
+
+$color-night-secondary: #282828;
+$color-night-secondary-highlight: #1a1a1a;
+$color-night-secondary-border: #f7f7f7;
+$color-night-secondary-shadow: #5a5a5a;
+$color-night-secondary-hover: #2b2b2b;
+
+$color-night-faded: #4c4c4c;
+$color-night-faded-highligt: #3a3a3a;
+$color-night-faded-shadow: #1c1c1c;
+
+$color-night-hover-purple: #342a4f;
+$color-night-hover-blue: #2a4f5f;
+$color-night-hover-green: #3e4f2a;
+$color-night-hover-yellow: #4f4c2a;
+// Day-mode colors
+@mixin day-theme {
+  $color-secondary: #f9c4d2;
 $color-secondary-highlight: #fff0f0;
 $color-secondary-border: #382b22;
 $color-secondary-shadow: #b18597;
 $color-secondary-hover: #ffe9e9;
 
-$color-faded:#dcdcdc;
+$color-faded: #dcdcdc;
 $color-faded-highligt: #e5e5e5;
 $color-faded-shadow: #808080;
-
 
 $color-hover-purple: #d0c4f9;
 $color-hover-blue: #c4e7f9;
 $color-hover-green: #d2f9c4;
 $color-hover-yellow: #f9f6c4;
-// Gradient
-
-$black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
+}
 
 
-// Night-mode colors
+
+@mixin night-theme() {
+  $color-secondary: #e41515;
+$color-secondary-highlight: #762323;
+$color-secondary-border: #f86801;
+$color-secondary-shadow: #b18597;
+$color-secondary-hover: #ffe9e9;
+
+$color-faded: #dcdcdc;
+$color-faded-highligt: #e5e5e5;
+$color-faded-shadow: #808080;
+
+$color-hover-purple: #d0c4f9;
+$color-hover-blue: #c4e7f9;
+$color-hover-green: #d2f9c4;
+$color-hover-yellow: #f9f6c4;
+}
 
 
 
