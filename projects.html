@@ -32,58 +32,79 @@
         <div class="fill"></div>
       </label>
     </div> -->
-    <header class="header menu">
+
+    <header class="page__header header menu">
       <div class=" header__container container">
         <button class="menu__button"><span></span></button>
 
         <ul class="header__nav header__nav--title menu__block">
 
-          <li>
-            <a href="index.html">
+        <li>
+            <a class="page__link" href="index.html">
               <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <use href="img/sprite_auto.svg#home">
               </svg>
-              <span>Go home</span>
+              <span>home</span>
             </a>
           </li>
-          <!-- <li>
-            <a href="projects.html" class="menu__button">
+          <li>
+            <a class="page__link" href="projects.html" class="">
               <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <use href="img/sprite_auto.svg#iphone">
-              </svg> <span>Projects</span>
+              </svg> <span>projects</span>
             </a>
 
-          </li> -->
+          </li>
           <li>
-            <a href="about.html">
+            <a class="page__link" href="about.html">
               <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <use href="img/sprite_auto.svg#climb">
               </svg>
-              <span>About Me</span>
+              <span>about</span>
             </a>
           </li>
-          <li>
-            <div class="switch">
-              <label for="toggle">
-                <input id="toggle" class="toggle-switch" type="checkbox">
-                <div class="sun-moon">
-                  <div class="dots"></div>
-                </div>
-                <div class="background">
-                  <div class="stars1"></div>
-                  <div class="stars2"></div>
-                </div>
-                <div class="fill"></div>
-              </label>
-            </div>
-          </li>
+
         </ul>
 
-
+   <div class="switch">
+          <label for="toggle">
+            <input id="toggle" class="toggle-switch" type="checkbox">
+            <div class="sun-moon">
+              <div class="dots"></div>
+            </div>
+            <div class="background">
+              <div class="stars1"></div>
+              <div class="stars2"></div>
+            </div>
+            <div class="fill"></div>
+          </label>
+        </div>
 
 
       </div>
 
+      <!-- <ul class="menu__block">
+        <span class="menu__close"></span>
+        <li class="menu__item"><a href="projects.html#toys"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-toys"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#coffee"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-coffee"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#device"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-device"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#antarctica"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-antarctica"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#supergym"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-supergym"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="projects.html#smart"><svg width="150" height="100">
+              <use href="img/sprite_auto.svg#logo-smart"></use>
+            </svg></a></li>
+        <li class="menu__item"><a href="">more</a></li>
+      </ul> -->
 
 
     </header>
@@ -124,7 +145,7 @@
 
               <div class="projects__item">
                 <div class="projects__header">
-                  <h3>Toys</h3>
+                  <h3 class="page__heading">Toys</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code"
                       href="https://github.com/msdubova/844063-mishka-16" target="_blank"> &#60;/&#62;</a> <a
@@ -243,7 +264,7 @@
               </div>
               <div class="projects__item">
                 <div class="projects__header">
-                  <h3>Coffee</h3>
+                  <h3 class="page__heading">Coffee</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code" href="https://github.com/msdubova/Drink2Go"
                       target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">brief</a>
@@ -367,7 +388,7 @@
               </div>
               <div class="projects__item">
                 <div class="projects__header">
-                  <h3>Device</h3>
+                  <h3 class="page__heading">Device</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code"
                       href="https://github.com/msdubova/844063-device-24" target="_blank"> &#60;/&#62;</a> <a
@@ -491,7 +512,7 @@
               </div>
               <div class="projects__item">
                 <div class="projects__header">
-                  <h3>Antarctica</h3>
+                  <h3 class="page__heading">Antarctica</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code" href="https://github.com/msdubova/Antarctica"
                       target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">brief</a>
@@ -614,7 +635,7 @@
               </div>
               <div class="projects__item">
                 <div class="projects__header">
-                  <h3>
+                  <h3 class="page__heading">
                     SuperGym</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code"
@@ -739,7 +760,7 @@
               </div>
               <div class="projects__item">
                 <div class="projects__header">
-                  <h3>Smart</h3>
+                  <h3 class="page__heading">Smart</h3>
                   <div class="projects__controls">
                     <a class="projects__control projects__control--code" href="https://github.com/msdubova/smartdevice"
                       target="_blank"> &#60;/&#62;</a> <a class="projects__control projects__control--brief">brief</a>
@@ -859,10 +880,11 @@
         <ul class="footer__socials socials">
 
           <li class="socials__item">
-            <a target="_blank" href="https://github.com/msdubova?tab=repositories">
+            <a class="page__link" target="_blank" href="https://github.com/msdubova?tab=repositories">
               <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                 <use href="img/sprite_auto.svg#github">
               </svg>
+              <span>github</span>
             </a>
           </li>
           <li class="socials__item socials__item--mobileonly">
@@ -872,12 +894,13 @@
               </svg>
             </a>
           </li>
-          <li class="socials__item">
-            <a target="_blank"
+          <li class="page__link" class="socials__item">
+            <a class="page__link" target="_blank"
               href="https://www.linkedin.com/in/%D0%BE%D0%BB%D1%8C%D0%B3%D0%B0-%D0%B4%D1%83%D0%B1%D0%BE%D0%B2%D0%B0%D1%8F-a44262261/">
               <svg width="45" height="45" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <use href="img/sprite_auto.svg#linkedin">
+                <use href="img/sprite_auto.svg#linkdn">
               </svg>
+              <span>linkdn</span>
             </a>
           </li>
 
