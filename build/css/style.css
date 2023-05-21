@@ -440,7 +440,7 @@ template {
   font-weight: 400;
   font-family: "Press";
   font-display: swap;
-  src: url("../fonts/PressStart2P-Regular.ttf");
+  src: url("../fonts/PressStart2P-Regular.woff2") format("woff2"), url("../fonts/PressStart2P-Regular.woff") format("woff");
 }
 
 @font-face {

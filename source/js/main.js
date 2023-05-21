@@ -59,7 +59,7 @@ let openModal = () => {
   if (localStorage.getItem('theme') === 'dark') {
     block.classList.add('menu__block--active-night');
   } else {
-     block.classList.add('menu__block--active');
+    block.classList.add('menu__block--active');
   }
 };
 
@@ -67,7 +67,7 @@ let closeModal = () => {
   if (localStorage.getItem('theme') === 'dark') {
     block.classList.remove('menu__block--active-night');
   } else {
-     block.classList.remove('menu__block--active');
+    block.classList.remove('menu__block--active');
   }
 
   btn.classList.remove('menu__button--opened');
