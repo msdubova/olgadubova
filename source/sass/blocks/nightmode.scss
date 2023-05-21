@@ -1,8 +1,8 @@
 .switch {
   position: relative;
 
-  width: 6rem;
-  height: 3rem;
+  width: size(96px);
+  height: size(48px);
   overflow: hidden;
 }
 
@@ -23,9 +23,10 @@
   position: absolute;
   z-index: 1;
 
-  width: 6rem;
-  height: 3rem;
-
+  // width: 6rem;
+  // height: 3rem;
+  width: size(96px);
+  height: size(48px);
   background: linear-gradient(to right, $color-secondary-border 0%, $color-secondary-shadow 100%);
   background: $color-secondary;
   border: 2px solid $color-secondary-shadow;

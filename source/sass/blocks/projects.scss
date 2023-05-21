@@ -1,10 +1,10 @@
 .projects {
   height: 88vh;
-  margin-top: 80px;
+  margin-top: size(80px);
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
-    width: 5px;
+    width: size(5px);
   }
 
   h2 {
@@ -14,15 +14,15 @@
 }
 
 .projects__container {
-  padding-top: 20px;
+  padding-top: size(20px);
 }
 
 .projects__wrapper {
   display: grid;
   width: 100%;
 
-  grid-column-gap: 50px;
-  grid-gap: 30px;
+  grid-column-gap: size(50px);
+  grid-gap: size(30px);
   grid-template-columns: 48% 48%;
   grid-template-rows: auto;
   @include reset-ul();
@@ -37,11 +37,11 @@
 
   background-color: $color-default-white;
   background-color: $color-secondary-border;
-  border-radius: 10px;
+  border-radius: size(10px);
 
   &:nth-child(2n) {
     .projects__stack {
-      right: 10px;
+      right: size(10px);
       left: auto;
     }
   }
@@ -62,7 +62,7 @@
     .projects__stack {
       z-index: -1;
 
-      transform: translateX(-35px);
+      transform: translateX(size(-35px));
       opacity: 1;
 
       transition-duration: 1s;
@@ -74,7 +74,7 @@
 
     &:nth-child(2n) {
       .projects__stack {
-        transform: translateX(46px);
+        transform: translateX(size(46px));
 
         & svg {
           fill: $color-secondary-border;
@@ -90,8 +90,8 @@
 
 .projects__item {
   position: relative;
-  top: -15px;
-  left: -15px;
+  top: size(-15px);
+  left: size(-15px);
 
   display: block;
   width: 100%;
@@ -99,17 +99,17 @@
 
   background-color: $color-faded;
   background-size: cover;
-  border: 1px solid $color-secondary-border;
-  border-radius: 10px;
-  transform: translateY(10px);
+  border: size(1px) solid $color-secondary-border;
+  border-radius: size(10px);
+  transform: translateY(size(10px));
 
   transition-duration: 0.5s;
 }
 
 .projects__stack {
   position: absolute;
-  top: -15px;
-  left: -15px;
+  top: size(-15px);
+  left: size(-15px);
 
   display: flex;
   flex-direction: column;
@@ -141,11 +141,11 @@
   width: 100%;
   height: 15%;
   margin: 0;
-  padding: 0 15px;
+  padding: 0 size(15px);
 
   color: $color-secondary-border;
 
-  border-bottom: 1px solid $color-secondary-border;
+  border-bottom: size(1px) solid $color-secondary-border;
 
   h3 {
     font-family: "Press";
@@ -154,7 +154,7 @@
 }
 
 .projects__main {
-  height: 330px;
+  height: size(330px);
   overflow-y: scroll;
 
   scrollbar-width: none;
@@ -169,7 +169,7 @@
     display: block;
     width: 100%;
 
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 size(10px) size(10px);
   }
 }
 
@@ -177,21 +177,21 @@
   display: grid;
   width: 50%;
 
-  grid-column-gap: 10px;
+  grid-column-gap: size(10px);
   grid-template-columns: auto auto auto;
 }
 
 .projects__control {
-  padding: 5px;
+  padding: size(5px);
 
   font-weight: 800;
-  font-size: 16px;
+  font-size: size(16px);
   text-align: center;
   color: $color-secondary-border;
 
   background: $color-secondary-highlight;
-  border: 1px solid $color-secondary-border;
-  border-radius: 8px;
+  border: size(1px) solid $color-secondary-border;
+  border-radius: size(8px);
   transform-style: preserve-3d;
   cursor: pointer;
 
@@ -217,11 +217,11 @@
 @include vp-tablet {
   .projects__wrapper {
     width: 90%;
-    max-width: 560px;
+    max-width: size(560px);
     margin: auto;
-    padding-bottom: 100px;
+    padding-bottom: size(100px);
 
-    grid-row-gap: 120px;
+    grid-row-gap: size(120px);
     grid-template-columns: auto;
   }
 
@@ -306,14 +306,14 @@
   }
 
   .projects__container {
-    padding-bottom: 60px;
+    padding-bottom: size(60px);
   }
 
   .projects__wrapper {
     width: 100%;
-    padding-bottom: 160px;
+    padding-bottom: size(160px);
 
-    grid-row-gap: 150px;
+    grid-row-gap: size(150px);
   }
 
   .projects__block {
@@ -334,7 +334,7 @@
   .projects__header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: size(20px);
     padding: 0;
 
     border: none;
@@ -352,7 +352,7 @@
     height: auto;
 
     border: 1px solid $color-secondary-border;
-    border-radius: 10px;
+    border-radius: size(10px);
   }
 
   .projects__stack {
@@ -360,7 +360,7 @@
 
     display: grid;
 
-    grid-gap: 20px;
+    grid-gap: size(20px);
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
 

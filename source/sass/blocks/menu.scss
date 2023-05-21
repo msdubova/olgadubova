@@ -24,7 +24,7 @@
       align-items: center;
       width: 100%;
       height: calc(100vh - 66px);
-      padding-top: 30px;
+      padding-top: size(30px);
 
       background: $color-secondary-highlight;
     }
@@ -41,7 +41,7 @@
       align-items: center;
       width: 100%;
       height: calc(100vh - 66px);
-      padding-top: 30px;
+      padding-top: size(30px);
 
       background: $color-primary-dark;
       color: $color-secondary-highlight;
@@ -74,8 +74,8 @@
       height: 100%;
 
       background: $color-secondary-highlight;
-      border-radius: 5px;
-      box-shadow: 2px 2px 0 0 $color-secondary-shadow;
+      border-radius: size(5px);
+      box-shadow: size(2px) size(2px) 0 0 $color-secondary-shadow;
 
       transition-delay: 0.3;
 
@@ -87,8 +87,8 @@
         display: block;
 
         background-color: $color-secondary-highlight;
-        border-radius: 5px;
-        box-shadow: 2px 2px 0 0 $color-secondary-shadow;
+        border-radius: size(5px);
+        box-shadow: size(2px) size(2px) 0 0 $color-secondary-shadow;
       }
     }
   }

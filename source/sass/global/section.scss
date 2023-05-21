@@ -3,7 +3,7 @@
 
   &--title {
     height: 100vh;
-    padding-top: 100px;
+    padding-top: size(100px);
   }
 }
 
@@ -22,21 +22,25 @@
 
 
   p {
-    max-width: 500px;
+    max-width: size(500px);
     margin: auto;
-    margin-bottom: 50px;
-    margin-left: 15%;
+    margin-bottom: size(50px);
+    margin-left: 16%;
 
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 1px;
+    font-size: size(18px);
+    line-height: size(25px);
+    letter-spacing: size(1px);
   }
 }
 
 @include vp-tablet {
   .section {
+    p {
+      margin-left: 15%;
+
+    }
   }
 }
 
@@ -48,6 +52,6 @@
 
   .section--title {
     height: auto;
-    padding-top: 100px;
+    padding-top: size(100px);
   }
 }

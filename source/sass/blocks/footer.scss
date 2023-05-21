@@ -10,9 +10,9 @@
 .footer__container {
   display: flex;
   justify-content: flex-end;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-top: size(20px);
+  padding-bottom: size(20px);
+  padding-left: size(20px);
 
   svg {
     fill: $color-secondary-border;
@@ -36,7 +36,7 @@
 }
 
 .footer__socials {
-  width: 200px;
+  width: size(200px);
 }
 
 @include vp-tablet {
@@ -49,9 +49,9 @@
   }
 
   .footer__container {
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 20px;
+    padding-top: size(16px);
+    padding-bottom: size(16px);
+    padding-left: size(20px);
   }
 }
 
@@ -69,8 +69,8 @@
 
   .footer__container {
     justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: size(10px);
+    padding-bottom:size(10px);
 
     a {
       &:hover {
@@ -87,7 +87,7 @@
 
   .footer__socials {
     width: 100%;
-    max-width: 400px;
+    max-width: size(400px);
 
     svg {
       fill: $color-secondary-border;

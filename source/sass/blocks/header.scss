@@ -1,14 +1,14 @@
 .header {
   position: fixed;
 
-  width: 40%;
+  width: 60%;
   margin-right: auto;
 }
 
 .header__container {
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: size(20px);
+  padding-bottom: size(20px);
 }
 
 .header__nav {
@@ -24,8 +24,12 @@
     text-align: center;
   }
 
-  a:hover {
-    span {
+  a {
+    // filter: grayscale(1);
+
+    &:hover {
+      filter: none;
+       span {
       position: absolute;
 
       display: block;
@@ -36,6 +40,7 @@
 
       transition: 0.5s ease;
     }
+    }
   }
 }
 
@@ -45,8 +50,8 @@
   }
 
   .header__container {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: size(16px);
+    padding-bottom: size(16px);
   }
 
   .header__nav {
@@ -56,6 +61,7 @@
       svg {
         transform: none;
       }
+
       span {
         display: none;
       }
@@ -85,7 +91,7 @@
       span {
         font-weight: 700;
         font-size: 20px;
-        line-height: 50px;
+        line-height: size(50px);
         text-transform: uppercase;
       }
     }

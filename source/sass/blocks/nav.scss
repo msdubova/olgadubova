@@ -1,7 +1,7 @@
 .nav {
   flex-grow: 0;
   align-self: flex-start;
-  margin-left: 15%;
+  margin-left: 16%;
 
   ul {
     display: flex;
@@ -11,18 +11,18 @@
 
   li {
     display: block;
-    margin-left: 7px;
+    margin-right: size(7px);
   }
 
   a {
     display: block;
-    padding: 15px;
+    padding: size(15px);
   }
 }
 
 @include vp-tablet {
   .nav {
-    margin-left: 14%;
+    margin-left: 15%;
 
     span {
       display: none;

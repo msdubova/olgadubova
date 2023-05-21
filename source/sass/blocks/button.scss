@@ -1,13 +1,13 @@
 .button {
   display: inline-block;
   align-items: center;
-  margin: 10px 0;
-  padding: 20px;
+  margin: size(10px) 0;
+  padding: size(20px);
 
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: size(12px);
+  line-height: size(14px);
   vertical-align: middle;
   text-align: center;
   color: $color-default-white;
@@ -16,7 +16,7 @@
   letter-spacing: 0.05em;
 
   background: none;
-  border: $color-default-white 4px solid;
+  border: $color-default-white size(4px) solid;
   cursor: pointer;
 
   transition: opacity $trans-default;
@@ -26,7 +26,7 @@
   }
   @include vp-mobile {
     width: 100%;
-    padding: 25px 33px;
+    padding: size(25px) size(33px);
   }
 
   &--gradient {

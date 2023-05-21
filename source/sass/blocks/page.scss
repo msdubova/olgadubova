@@ -6,8 +6,8 @@
 
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  // font-size: size(16px);
+  // line-height: size(24px);
   font-family: "Poppins", "Arial", sans-serif;
   color: $color-secondary-border;
   letter-spacing: 0;
@@ -35,7 +35,7 @@
         overflow: visible;
 
         color: $color-secondary-highlight;
-        text-shadow: 13px 8px 0 $color-primary-black;
+        text-shadow: size(13px) size(8px) 0 $color-primary-black;
       }
     }
 
@@ -50,11 +50,11 @@
       color: $color-secondary-highlight;
 
       background-color: $color-primary-highlight;
-      border: 2px solid $color-primary-black;
+      border: size(2px) solid $color-primary-black;
 
       &::before {
         background: $color-primary-dark;
-        box-shadow: 0 0 0 2px $color-primary-black;
+        box-shadow: 0 0 0 size(2px) $color-primary-black;
       }
 
       &:hover {
@@ -64,7 +64,7 @@
 
         &::before {
           border-color: $color-primary-black;
-          box-shadow: 0 0 0 2px $color-primary-black;
+          box-shadow: 0 0 0 size(2px) $color-primary-black;
           transform: translate3d(0, 0.5em, -1em);
         }
       }
@@ -80,13 +80,13 @@
     }
 
     .page__link {
-      font-size: 12px;
+      font-size: size(12px);
       color: $color-secondary-highlight;
     }
   }
 
   .page__link {
-    font-size: 12px;
+    font-size: size(12px);
   }
 }
 
@@ -116,16 +116,16 @@
 
 
   h1 {
-    margin: 80px 0;
+    margin: size(80px) 0;
 
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 100px;
+    font-size: size(50px);
+    line-height: size(100px);
     font-family: "Press";
     text-align: center;
     color: #4b3b3f;
-    text-shadow: 13px 8px 0 $color-secondary-highlight;
+    text-shadow: size(13px) size(8px) 0 $color-secondary-highlight;
   }
 }
 
@@ -137,7 +137,7 @@
   text-transform: uppercase;
 
   background: $color-secondary-highlight;
-  border: 2px solid $color-secondary-shadow;
+  border: size(2px) solid $color-secondary-shadow;
   border-radius: 0.75em;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -157,7 +157,7 @@
 
     background: $color-secondary;
     border-radius: inherit;
-    box-shadow: 0 0 0 2px $color-secondary-shadow;
+    box-shadow: 0 0 0 size(2px) $color-secondary-shadow;
     transform: translate3d(0, 0.75em, -1em);
 
     transition: transform 0.15s, box-shadow 0.15s;
@@ -168,7 +168,7 @@
     transform: translate(0, 0.25em);
 
     &::before {
-      box-shadow: 0 0 0 2px $color-secondary-shadow;
+      box-shadow: 0 0 0 size(2px) $color-secondary-shadow;
       transform: translate3d(0, 0.5em, -1em);
     }
   }
@@ -178,7 +178,7 @@
     transform: translate(0em, 0.75em);
 
     &::before {
-      box-shadow: 0 0 0 2px $color-secondary-shadow, 0 0 $color-secondary-highlight;
+      box-shadow: 0 0 0 size(2px) $color-secondary-shadow, 0 0 $color-secondary-highlight;
       transform: translate3d(0, 0, -1em);
     }
   }
@@ -190,14 +190,10 @@
 @include vp-tablet {
   .page__main {
     h1 {
-      margin: 40px 0;
+      margin: size(40px) 0;
       overflow: visible;
 
-      font-size: 39px;
-    }
-
-    p {
-      margin: auto auto 40px 16%;
+      font-size: size(39px);
     }
   }
 }
@@ -211,7 +207,7 @@
 
       .page__heading {
         color: $color-secondary-highlight;
-        text-shadow: 3px 3px 0 $color-secondary-border;
+        text-shadow: size(3px) size(3px) 0 $color-secondary-border;
       }
 
       .page__menu {
@@ -244,13 +240,13 @@
       overflow: visible;
 
       font-size: 2em;
-      line-height: 45px;
+      line-height: size(45px);
       word-wrap: break-word;
-      text-shadow: 4px 4px 0 $color-secondary-highlight;
+      text-shadow: size(4px) size(4px) 0 $color-secondary-highlight;
     }
 
     p {
-      margin: 20px auto;
+      margin: size(20px) auto;
 
       text-align: center;
     }

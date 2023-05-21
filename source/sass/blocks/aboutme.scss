@@ -1,25 +1,33 @@
 .aboutme {
   height: 88vh;
-  margin-top: 80px;
+  margin-top: size(80px);
   overflow-y: scroll;
 
   &::-webkit-scrollbar {
     width: 5px;
   }
+
+  // h3 {
+  //   @include visually-hidden();
+  // }
 }
 
 .aboutme__wrapper {
   display: grid;
   width: 100%;
-  padding-top: 40px;
+  padding-top: size(40px);
 
   grid-gap: 20px;
-  grid-template-columns: 1fr 60%;
+  grid-template-columns: 1fr 1fr;
 
   .aboutme__p {
+    font-size: size(20px);
+    line-height: size(28px);
+    font-weight: 400;
     margin: auto;
-    margin-bottom: 15px;
+    margin-bottom: size(15px);
     margin-left: auto;
+    text-align: justify;
   }
 }
 
